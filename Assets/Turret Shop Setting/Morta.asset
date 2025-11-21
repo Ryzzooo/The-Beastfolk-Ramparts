@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eab8afb628a41343b1cbabb620ae26d, type: 3}
+  m_Name: Morta
+  m_EditorClassIdentifier: 
+  TurretPrefab: {fileID: 4897654944466209061, guid: 8b6959b4b26b7d544b90a0e4b419cf86, type: 3}
+  TurretShopCost: 60
+  TurretShopSprite: {fileID: 8605881140359049577, guid: 772a7e846d3b7a54f999304980d4d16b, type: 3}
