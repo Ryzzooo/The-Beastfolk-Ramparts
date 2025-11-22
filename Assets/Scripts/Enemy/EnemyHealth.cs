@@ -57,6 +57,7 @@ public class EnemyHealth : MonoBehaviour
     public void DealDamage(float damageReceived)
     {
         CurrentHealth -= damageReceived;
+        DamageTextManager.Instance.ShowDamageText(damageReceived, transform.position);
         if (CurrentHealth <= 0)
         {
             CurrentHealth = 0;
