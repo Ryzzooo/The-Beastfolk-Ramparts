@@ -6,45 +6,45 @@ public class Soldier : MonoBehaviour
     [Header("Stats")]
     [SerializeField] private float maxHealth = 30f;
     [SerializeField] private float damage = 3f;
-    [SerializeField] private float attackSpeed = 1f;
-    [SerializeField] private float lifeTime = 10f; // Berapa lama prajurit bertahan sebelum hilang otomatis
+
+    [Header("Attack Settings")]
+    [Tooltip("Kapan damage masuk (sesuaikan dengan gerakan tangan soldier)")]
+    [SerializeField] private float hitDelay = 0.4f; 
+    
+    [Tooltip("Berapa lama soldier DIAM setelah memukul")]
+    [SerializeField] private float attackCooldown = 1.0f; 
+
+    [SerializeField] private float lifeTime = 15f; 
+
+    [Header("Components")]
+    [SerializeField] private Animator animator; 
 
     private float _currentHealth;
-    private Enemy _targetEnemy; // Musuh yang sedang dihadang
-    private bool _isEngaged = false; // Apakah sedang sibuk?
+    private Enemy _targetEnemy; 
+    private bool _isEngaged = false; 
 
     private void Start()
     {
         _currentHealth = maxHealth;
-        
-        // Prajurit akan hilang otomatis setelah beberapa detik (biar tidak numpuk)
+        if (animator == null) animator = GetComponent<Animator>();
         Destroy(gameObject, lifeTime); 
     }
 
     private void Update()
     {
-        // Cek jika musuh yang kita pegang tiba-tiba mati (oleh Turret)
         if (_isEngaged && (_targetEnemy == null || !_targetEnemy.gameObject.activeInHierarchy))
         {
-            // Kembali siaga
-            _isEngaged = false;
-            _targetEnemy = null;
-            StopAllCoroutines();
+            StopFighting();
         }
     }
 
-    // Deteksi Musuh Lewat
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Sesuatu masuk ke area prajurit: " + other.name);
-        // 1. Jika kita SUDAH sibuk, abaikan musuh lain
         if (_isEngaged) return;
 
         if (other.CompareTag("Enemy"))
         {
-            Debug.Log("MUSUH TERDETEKSI! MENYERANG!");
             Enemy enemy = other.GetComponent<Enemy>();
-            
             if (enemy != null)
             {
                 EngageEnemy(enemy);
@@ -57,40 +57,63 @@ public class Soldier : MonoBehaviour
         _isEngaged = true;
         _targetEnemy = enemy;
 
-        // 1. Beritahu musuh untuk berhenti
         enemy.GetBlocked(this);
 
-        // 2. Mulai kita serang musuh
         StartCoroutine(AttackEnemyRoutine());
+    }
+
+    private void StopFighting()
+    {
+        _isEngaged = false;
+        _targetEnemy = null;
+        StopAllCoroutines();
+
+        // Pastikan saat berhenti, animasi dipaksa balik ke Idle (False)
+        if (animator != null) animator.SetBool("onAttack", false);
     }
 
     private IEnumerator AttackEnemyRoutine()
     {
         while (_isEngaged && _targetEnemy != null)
         {
-            yield return new WaitForSeconds(attackSpeed);
+            // 1. NYALAKAN Animasi (Mulai mengayun)
+            if (animator != null) 
+            {
+                animator.SetBool("onAttack", true); 
+            }
 
-            // Serang Musuh
+            // 2. Tunggu momen pedang kena
+            yield return new WaitForSeconds(hitDelay);
+
+            // 3. Berikan Damage
             if (_targetEnemy != null && _targetEnemy.gameObject.activeInHierarchy)
             {
-                // Ambil health musuh
                 EnemyHealth enemyHealth = _targetEnemy.GetComponent<EnemyHealth>();
                 if (enemyHealth != null)
                 {
                     enemyHealth.DealDamage(damage);
-                    // TODO: Animasi prajurit menyerang
                 }
             }
+
+            // 4. MATIKAN Animasi (PENTING!)
+            // Kita ubah jadi FALSE sekarang.
+            // Karena "Has Exit Time" di Unity nanti kita nyalakan, 
+            // dia akan menyelesaikan ayunan dulu baru balik ke Idle.
+            if (animator != null) 
+            {
+                animator.SetBool("onAttack", false);
+            }
+
+            // 5. Tunggu Cooldown (Fase Diam/Idle)
+            // Soldier akan berdiri diam selama waktu ini sebelum loop mengulang ke atas
+            yield return new WaitForSeconds(attackCooldown);
         }
     }
 
     public void TakeDamage(float amount)
     {
         _currentHealth -= amount;
-        if (_currentHealth <= 0)
-        {
-            Die();
-        }
+        if (_currentHealth <= 0) Die();
     }
 
     private void Die()
@@ -100,12 +123,10 @@ public class Soldier : MonoBehaviour
 
     private void OnDisable()
     {
-        // Setiap kali prajurit ini nonaktif (mati/durasi habis/game over)
-        // Pastikan musuh yang sedang dipegang dilepaskan!
         if (_targetEnemy != null)
         {
             _targetEnemy.ReleaseBlock();
-            _targetEnemy = null; // Bersihkan referensi
+            _targetEnemy = null;
         }
     }
 }

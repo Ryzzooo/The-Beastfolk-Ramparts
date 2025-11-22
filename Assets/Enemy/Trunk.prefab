@@ -112,7 +112,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_Sprite: {fileID: -5219337101871392587, guid: bf4df7b2c9cda4c44b372e2b47a5cb8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -208,6 +208,7 @@ MonoBehaviour:
   barPosition: {fileID: 5895363572027461343}
   initialHealth: 10
   maxHealth: 10
+  reward: 10
 --- !u!114 &4805287975042183123
 MonoBehaviour:
   m_ObjectHideFlags: 0

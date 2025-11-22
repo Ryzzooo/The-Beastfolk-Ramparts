@@ -3,23 +3,25 @@ using UnityEngine;
 public class ReinforcementSpell : MonoBehaviour
 {
     [Header("Settings")]
-
     [Tooltip("Biaya Mana untuk Spell ini")]
     [SerializeField] private float manaCost = 20f;
-    [SerializeField] private GameObject soldierPrefab;
-    [SerializeField] private int soldierCount = 2;
     [SerializeField] private float cooldownTime = 20f;
+
+    [Header("Soldier Prefabs (Fixed 2 Units)")]
+    [Tooltip("Prajurit yang muncul di Kiri")]
+    [SerializeField] private GameObject soldierPrefab1; 
     
+    [Tooltip("Prajurit yang muncul di Kanan")]
+    [SerializeField] private GameObject soldierPrefab2;
+
     [Header("Visuals")]
-    [Tooltip("GameObject visual hantu/lingkaran yang mengikuti mouse (Opsional)")]
     [SerializeField] private GameObject rangePreview; 
 
     [Header("Formation")]
-    [Tooltip("Jarak antar prajurit (semakin kecil semakin dekat)")]
     [SerializeField] private float soldierSpacing = 0.7f;
 
     private bool _isOnCooldown = false;
-    private bool _isPlacementMode = false; // Mode memilih lokasi
+    private bool _isPlacementMode = false; 
 
     private void Start()
     {
@@ -28,14 +30,13 @@ public class ReinforcementSpell : MonoBehaviour
 
     private void Update()
     {
-        // Hanya jalankan logika ini jika sedang mode menaruh prajurit
         if (_isPlacementMode)
         {
             HandlePlacementMode();
         }
     }
 
-    // Fungsi ini dipanggil tombol UI
+    // 1. Dipanggil saat tombol ditekan
     public void ActivatePlacementMode()
     {
         if (_isOnCooldown)
@@ -44,44 +45,60 @@ public class ReinforcementSpell : MonoBehaviour
             return;
         }
 
-        if (PlayerMana.Instance == null || PlayerMana.Instance.CurrentMana < manaCost)
+        // --- CEK MANA (Tanpa mengurangi dulu) ---
+        if (PlayerMana.Instance != null)
         {
-            Debug.Log("Mana tidak cukup untuk memanggil bala bantuan.");
+            if (PlayerMana.Instance.CurrentMana < manaCost)
+            {
+                Debug.Log("Mana tidak cukup untuk memanggil bala bantuan.");
+                return;
+            }
+        }
+        else
+        {
+            Debug.LogError("PlayerMana instance tidak ditemukan di Scene!");
             return;
         }
 
         if (_isPlacementMode)
         {
-            // Jika diklik lagi saat mode aktif, batalkan (Cancel)
             CancelPlacement();
             return;
         }
 
         _isPlacementMode = true;
-        Debug.Log("Pilih lokasi untuk prajurit...");
-        
         if (rangePreview != null) rangePreview.SetActive(true);
     }
 
     private void HandlePlacementMode()
     {
-        // 1. Ikuti posisi mouse (untuk preview)
         Vector3 mousePos = GetMouseWorldPosition();
         if (rangePreview != null)
         {
             rangePreview.transform.position = mousePos;
         }
 
-        // 2. Deteksi Klik Kiri (DEPLOY)
-        if (Input.GetMouseButtonDown(0)) // 0 = Klik Kiri
+        // 2. Klik Kiri = DEPLOY
+        if (Input.GetMouseButtonDown(0)) 
         {
-            SpawnSoldiers(mousePos);
-            _isPlacementMode = false;
-            if (rangePreview != null) rangePreview.SetActive(false);
+            // --- KURANGI MANA DISINI ---
+            // Kita pakai TryConsumeMana dari script PlayerMana.cs kamu
+            // Fungsi ini akan return TRUE jika mana cukup dan sudah dikurangi
+            if (PlayerMana.Instance.TryConsumeMana(manaCost))
+            {
+                SpawnSoldiers(mousePos);
+                _isPlacementMode = false;
+                if (rangePreview != null) rangePreview.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("Gagal deploy: Mana tiba-tiba tidak cukup.");
+                CancelPlacement();
+            }
         }
 
-        // 3. Deteksi Klik Kanan (CANCEL)
-        if (Input.GetMouseButtonDown(1)) // 1 = Klik Kanan
+        // 3. Klik Kanan = CANCEL
+        if (Input.GetMouseButtonDown(1)) 
         {
             CancelPlacement();
         }
@@ -91,20 +108,27 @@ public class ReinforcementSpell : MonoBehaviour
     {
         _isPlacementMode = false;
         if (rangePreview != null) rangePreview.SetActive(false);
-        Debug.Log("Deployment Dibatalkan.");
     }
 
     private void SpawnSoldiers(Vector3 centerPos)
     {
-        for (int i = 0; i < soldierCount; i++)
+        // Spawn Prajurit 1 (Kiri)
+        if (soldierPrefab1 != null)
         {
-            float xOffset = (i - (soldierCount - 1) / 2f) * soldierSpacing;
-            float yOffset = 0;
-            Vector3 spawnPosition = new Vector3(centerPos.x + xOffset, centerPos.y + yOffset, 0);
-            Instantiate(soldierPrefab, spawnPosition, Quaternion.identity);
+            Vector3 pos1 = centerPos;
+            pos1.x -= soldierSpacing / 2f; 
+            Instantiate(soldierPrefab1, pos1, Quaternion.identity);
         }
 
-        Debug.Log("Prajurit Dikerahkan!");
+        // Spawn Prajurit 2 (Kanan)
+        if (soldierPrefab2 != null)
+        {
+            Vector3 pos2 = centerPos;
+            pos2.x += soldierSpacing / 2f;
+            Instantiate(soldierPrefab2, pos2, Quaternion.identity);
+        }
+
+        Debug.Log("2 Prajurit Dikerahkan!");
         StartCoroutine(CooldownRoutine());
     }
 
@@ -118,10 +142,9 @@ public class ReinforcementSpell : MonoBehaviour
     private System.Collections.IEnumerator CooldownRoutine()
     {
         _isOnCooldown = true;
-        // TODO: Update UI Cooldown (misal tombol jadi abu-abu) di sini
+        // Logic UI cooldown bisa ditaruh disini
         yield return new WaitForSeconds(cooldownTime);
         _isOnCooldown = false;
-        // TODO: Update UI Cooldown (tombol nyala lagi)
-        Debug.Log("Reinforcement Siap!");
+        Debug.Log("Reinforcement Siap Kembali!");
     }
 }
