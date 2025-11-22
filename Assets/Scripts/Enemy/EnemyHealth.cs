@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private Transform barPosition;
     [SerializeField] private float initialHealth = 10f;
     [SerializeField] private float maxHealth = 10f;
+    [SerializeField] private int reward = 10;
 
     public float CurrentHealth { get; set; }
 
@@ -75,9 +76,11 @@ public class EnemyHealth : MonoBehaviour
     }
 
     private void Die()
-{
-    OnEnemyKilled?.Invoke(_enemy);
-    ResetHealth(); // Reset health untuk di pool
-    ObjectPooler.ReturnToPool(gameObject);
-}
+    {
+        DamageTextManager.Instance.ShowCoinPopup(reward, transform.position);
+        CurrencySystem.Instance.AddCoins(reward);
+        OnEnemyKilled?.Invoke(_enemy);
+        ResetHealth(); // Reset health untuk di pool
+        ObjectPooler.ReturnToPool(gameObject);
+    }
 }

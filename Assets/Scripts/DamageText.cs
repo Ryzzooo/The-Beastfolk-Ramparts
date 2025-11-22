@@ -6,10 +6,15 @@ public class DamageText : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dmgText;
     public TextMeshProUGUI DmgText => dmgText;
     // Fungsi ini akan kita panggil dari animasi
-    public void SetDamage(float damageAmount)
+    public void SetText(string text)
     {
-        // Mengubah angka float menjadi string teks
-        dmgText.text = damageAmount.ToString();
+        dmgText.text = text;
+    }
+
+    // 2. Fungsi untuk mengubah warna (misal: jadi Kuning)
+    public void SetColor(Color color)
+    {
+        dmgText.color = color;
     }
     public void OnAnimationFinished()
     {

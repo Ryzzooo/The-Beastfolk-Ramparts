@@ -28,9 +28,30 @@ public class DamageTextManager : Singleton<DamageTextManager>
         // Pastikan skripnya ada, lalu set angkanya
         if (dmgTextScript != null)
         {
-            dmgTextScript.SetDamage(damageAmount); 
+            dmgTextScript.SetText("-" + damageAmount.ToString());
+            dmgTextScript.SetColor(Color.red);
         }
         // ----------------------
+
+        textObj.SetActive(true);
+    }
+    public void ShowCoinPopup(int coinAmount, Vector3 spawnPosition)
+    {
+        GameObject textObj = _pooler.GetInstanceFromPool();
+
+        // Posisi sedikit lebih tinggi dari damage text biasa agar tidak tumpang tindih
+        textObj.transform.position = spawnPosition + new Vector3(0, 0.8f, 0);
+        textObj.transform.rotation = Quaternion.identity;
+
+        DamageText dmgTextScript = textObj.GetComponent<DamageText>();
+        if (dmgTextScript != null)
+        {
+            // Set Teks dengan tanda "+"
+            dmgTextScript.SetText("+" + coinAmount.ToString());
+
+            // Set Warna menjadi Kuning Emas
+            dmgTextScript.SetColor(Color.yellow);
+        }
 
         textObj.SetActive(true);
     }
