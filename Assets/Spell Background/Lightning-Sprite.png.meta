@@ -1,0 +1,1067 @@
+fileFormatVersion: 2
+guid: ab2aabc8e33f3c348b50b0f42c702cfa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4882693165544048558
+    second: Lightning-Sprite_0
+  - first:
+      213: 8122312782600459461
+    second: Lightning-Sprite_1
+  - first:
+      213: -76751146753467052
+    second: Lightning-Sprite_2
+  - first:
+      213: -7040146919522393849
+    second: Lightning-Sprite_3
+  - first:
+      213: -6092781425869179912
+    second: Lightning-Sprite_4
+  - first:
+      213: -338885830457116626
+    second: Lightning-Sprite_5
+  - first:
+      213: -9199644981428979596
+    second: Lightning-Sprite_6
+  - first:
+      213: 2709443455977905291
+    second: Lightning-Sprite_7
+  - first:
+      213: 7179020030657475536
+    second: Lightning-Sprite_8
+  - first:
+      213: -2187716218413989437
+    second: Lightning-Sprite_9
+  - first:
+      213: -508199311523409241
+    second: Lightning-Sprite_10
+  - first:
+      213: -7992775691789744767
+    second: Lightning-Sprite_11
+  - first:
+      213: -1017431517115556849
+    second: Lightning-Sprite_12
+  - first:
+      213: -161569057957228105
+    second: Lightning-Sprite_13
+  - first:
+      213: -8064357524055691869
+    second: Lightning-Sprite_14
+  - first:
+      213: 3958256932099625586
+    second: Lightning-Sprite_15
+  - first:
+      213: -8473524029926376355
+    second: Lightning-Sprite_16
+  - first:
+      213: 5824770653291779128
+    second: Lightning-Sprite_17
+  - first:
+      213: -6866999837088722772
+    second: Lightning-Sprite_18
+  - first:
+      213: -2494287833918770915
+    second: Lightning-Sprite_19
+  - first:
+      213: 7059919632279402364
+    second: Lightning-Sprite_20
+  - first:
+      213: -6130881355750023670
+    second: Lightning-Sprite_21
+  - first:
+      213: 5296349115079038139
+    second: Lightning-Sprite_22
+  - first:
+      213: 2486748845421200222
+    second: Lightning-Sprite_23
+  - first:
+      213: -8283914123907863303
+    second: Lightning-Sprite_24
+  - first:
+      213: -1125784296904559768
+    second: Lightning-Sprite_25
+  - first:
+      213: 2073922464004017965
+    second: Lightning-Sprite_26
+  - first:
+      213: 6715467126159968051
+    second: Lightning-Sprite_27
+  - first:
+      213: -2413180641454892759
+    second: Lightning-Sprite_28
+  - first:
+      213: 5196304504633419040
+    second: Lightning-Sprite_29
+  - first:
+      213: 3710034696490724439
+    second: Lightning-Sprite_30
+  - first:
+      213: 5836229793627026884
+    second: Lightning-Sprite_31
+  - first:
+      213: -5731309819066569246
+    second: Lightning-Sprite_32
+  - first:
+      213: 2615010552871151378
+    second: Lightning-Sprite_33
+  - first:
+      213: -4599150290831222669
+    second: Lightning-Sprite_34
+  - first:
+      213: 2310814316543291983
+    second: Lightning-Sprite_35
+  - first:
+      213: -3156829116677312194
+    second: Lightning-Sprite_36
+  - first:
+      213: 3089635024077709620
+    second: Lightning-Sprite_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lightning-Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 947
+        width: 83
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea70b7f709fc2c340800000000000000
+      internalID: 4882693165544048558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 826
+        width: 104
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4d381217048b070800000000000000
+      internalID: 8122312782600459461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 507
+        width: 165
+        height: 722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45dd7a91d335feef0800000000000000
+      internalID: -76751146753467052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 0
+        width: 1282
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701ae4f4daf5c4e90800000000000000
+      internalID: -7040146919522393849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 5162
+        y: 40
+        width: 307
+        height: 1180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f338f8f297127ba0800000000000000
+      internalID: -6092781425869179912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 6500
+        y: 37
+        width: 349
+        height: 1183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28b038f1290c4bf0800000000000000
+      internalID: -338885830457116626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 7343
+        y: 0
+        width: 1282
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478783691ab445080800000000000000
+      internalID: -9199644981428979596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 9039
+        y: 52
+        width: 376
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cd19cc770e99520800000000000000
+      internalID: 2709443455977905291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 10277
+        y: 45
+        width: 271
+        height: 1233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3b0ca8ea001a360800000000000000
+      internalID: 7179020030657475536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 11286
+        y: 642
+        width: 125
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1c21cb0bba3a1e0800000000000000
+      internalID: -2187716218413989437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 5494
+        y: 127
+        width: 70
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a29c813b6382f8f0800000000000000
+      internalID: -508199311523409241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 11234
+        y: 40
+        width: 245
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185ce791bd4f31190800000000000000
+      internalID: -7992775691789744767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 12178
+        y: 52
+        width: 277
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c5a0ffc6b51e1f0800000000000000
+      internalID: -1017431517115556849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 13053
+        y: 113
+        width: 69
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1d3cd3ccdf1cdf0800000000000000
+      internalID: -161569057957228105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 13061
+        y: 56
+        width: 196
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad69e40f85a51090800000000000000
+      internalID: -8064357524055691869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 13862
+        y: 202
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272968f35bd8ee630800000000000000
+      internalID: 3958256932099625586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 15248
+        y: 161
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c70881acef76a80800000000000000
+      internalID: -8473524029926376355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 5001
+        y: 89
+        width: 130
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83493975c0eb5d050800000000000000
+      internalID: 5824770653291779128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 5429
+        y: 49
+        width: 320
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca059a5f70483b0a0800000000000000
+      internalID: -6866999837088722772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 9413
+        y: 132
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1171bb2e62826dd0800000000000000
+      internalID: -2494287833918770915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 15272
+        y: 151
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77f1d0208fd9f160800000000000000
+      internalID: 7059919632279402364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 15468
+        y: 178
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e5476c3ebbaeaa0800000000000000
+      internalID: -6130881355750023670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 6855
+        y: 95
+        width: 81
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb49dba7579608940800000000000000
+      internalID: 5296349115079038139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 9428
+        y: 65
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5381f846e4b28220800000000000000
+      internalID: 2486748845421200222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 13806
+        y: 113
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc61ae8eff990d80800000000000000
+      internalID: -8283914123907863303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 13908
+        y: 99
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8637a4985296060f0800000000000000
+      internalID: -1125784296904559768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 13981
+        y: 108
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f89ae2e7d08cc10800000000000000
+      internalID: 2073922464004017965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 14631
+        y: 58
+        width: 181
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337049b65c1223d50800000000000000
+      internalID: 6715467126159968051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_28
+      rect:
+        serializedVersion: 2
+        x: 14823
+        y: 110
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9295b3ffdf8a28ed0800000000000000
+      internalID: -2413180641454892759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_29
+      rect:
+        serializedVersion: 2
+        x: 15258
+        y: 130
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025ef6f6a6bfc1840800000000000000
+      internalID: 5196304504633419040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_30
+      rect:
+        serializedVersion: 2
+        x: 15280
+        y: 58
+        width: 182
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c24bc56e0bc7330800000000000000
+      internalID: 3710034696490724439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_31
+      rect:
+        serializedVersion: 2
+        x: 15364
+        y: 101
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5b0bc53147ef050800000000000000
+      internalID: 5836229793627026884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_32
+      rect:
+        serializedVersion: 2
+        x: 15921
+        y: 104
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed24d8d51c4670b0800000000000000
+      internalID: -5731309819066569246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_33
+      rect:
+        serializedVersion: 2
+        x: 4994
+        y: 49
+        width: 73
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21768cf2e326a4420800000000000000
+      internalID: 2615010552871151378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_34
+      rect:
+        serializedVersion: 2
+        x: 6422
+        y: 57
+        width: 87
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378de568d298c20c0800000000000000
+      internalID: -4599150290831222669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_35
+      rect:
+        serializedVersion: 2
+        x: 12467
+        y: 81
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42337fa069a11020800000000000000
+      internalID: 2310814316543291983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_36
+      rect:
+        serializedVersion: 2
+        x: 13823
+        y: 56
+        width: 159
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31b6dbd4a0b034d0800000000000000
+      internalID: -3156829116677312194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning-Sprite_37
+      rect:
+        serializedVersion: 2
+        x: 15885
+        y: 61
+        width: 102
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431e1cf4fa690ea20800000000000000
+      internalID: 3089635024077709620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
