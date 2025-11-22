@@ -190,6 +190,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -822,7 +835,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tanks_0: 2909458258800530498
+      Tanks_1: 114431900800630296
+      Tanks_10: 396732735775326835
+      Tanks_11: -5729083747018591566
+      Tanks_12: -5003441805911773482
+      Tanks_13: -1122094474531169145
+      Tanks_14: 6243581923662751277
+      Tanks_15: 3519529513924866202
+      Tanks_16: -2015901961681485058
+      Tanks_17: -5936394344712596718
+      Tanks_18: 5669823213284423688
+      Tanks_19: -4316592164830538274
+      Tanks_2: -8637928809046126964
+      Tanks_20: -5800861129757255216
+      Tanks_21: 1219458201319533448
+      Tanks_22: 290398441325212779
+      Tanks_23: -4982753438549594078
+      Tanks_24: -633776839387804688
+      Tanks_25: -657506697796951664
+      Tanks_26: -8352752053314470277
+      Tanks_27: 2305633253029399481
+      Tanks_3: 114041575782168934
+      Tanks_4: -2072038468702977127
+      Tanks_5: -995580392115382208
+      Tanks_6: 5228198911775917173
+      Tanks_7: -8627659152491121480
+      Tanks_8: -3206531110674126801
+      Tanks_9: 769992891098123094
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
