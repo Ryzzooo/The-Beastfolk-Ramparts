@@ -5,9 +5,10 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
 
-    public soundlibrary soundLibrary;
-    public AudioSource sfxSource;
-    public AudioMixer mixer;
+    [Header("References")]
+    public soundlibrary soundLibrary; // Library lama kamu
+    public AudioSource sfxSource;     // Drag Audio Source di sini
+    public AudioMixer mixer;          // Drag Audio Mixer di sini
 
     private void Awake()
     {
@@ -23,19 +24,33 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         float savedVolume = PlayerPrefs.GetFloat("SFXVolume", 0f);
-        mixer.SetFloat("SFXVolume", savedVolume);
+        if(mixer != null) mixer.SetFloat("SFXVolume", savedVolume);
     }
 
     public void SetVolume(float volume)
     {
-        mixer.SetFloat("SFXVolume", volume);
+        if(mixer != null) mixer.SetFloat("SFXVolume", volume);
         PlayerPrefs.SetFloat("SFXVolume", volume);
     }
 
+    // --- FUNGSI LAMA (Play pakai String) ---
     public void Play(string soundName)
     {
-        AudioClip clip = soundLibrary.GetClipFromName(soundName);
-        if (clip != null)
+        if (soundLibrary != null)
+        {
+            AudioClip clip = soundLibrary.GetClipFromName(soundName);
+            if (clip != null && sfxSource != null)
+            {
+                sfxSource.PlayOneShot(clip);
+            }
+        }
+    }
+
+    // --- FUNGSI BARU (INI YANG HILANG & BIKIN ERROR) ---
+    // Fungsi ini dibutuhkan oleh GlobalButtonSound
+    public void PlaySFX(AudioClip clip)
+    {
+        if (clip != null && sfxSource != null)
         {
             sfxSource.PlayOneShot(clip);
         }
