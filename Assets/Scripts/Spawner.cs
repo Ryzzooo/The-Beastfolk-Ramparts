@@ -1,69 +1,169 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Spawner : MonoBehaviour
 {
-    [Header("Settings")]
-    [SerializeField] private int enemyCount = 10;
+    [Header("Level Settings")]
+    [SerializeField] private LevelSetting levelSettings; // File data level (ScriptableObject)
+    [SerializeField] private Waypoint path; // Jalur jalan musuh
 
-    [Header("Fixed Delay")]
-    [SerializeField] private float delayBtwSpawns;
+    // Dictionary untuk menyimpan banyak pool (Pool-Rino, Pool-Trunk, dll)
+    private Dictionary<string, ObjectPooler> _poolerDictionary;
 
-    [Header("References")] // <-- Tambahkan header ini
-    [SerializeField] private Waypoint path; // <-- TAMBAHKAN baris ini
+    [Header("UI References")]
+    [SerializeField] private Button startWaveButton;
 
-    private float _spawnTimer;
-    private int _enemiesSpawned;
-    private ObjectPooler _pooler;
+    private int _currentWaveIndex = 0;
+    private int _enemiesAlive;
+
+    public static event Action OnWaveCompleted;
+    public static event Action OnLevelCompleted;
 
     private void Start()
     {
-        _pooler = GetComponent<ObjectPooler>();
+        SetupPoolers();
 
-        if (path == null)
+        // 1. Hubungkan tombol ke fungsi (tapi jangan tampilkan dulu)
+        startWaveButton.onClick.AddListener(StartNextWave);
+
+        // 2. Sembunyikan tombol di awal agar rapi
+        startWaveButton.gameObject.SetActive(false);
+
+        // 3. LANGSUNG JALANKAN WAVE PERTAMA SECARA OTOMATIS
+        StartNextWave();
+    }
+    public void StartNextWave()
+    {
+        if (_currentWaveIndex < levelSettings.Waves.Count)
         {
-            Debug.LogError("Waypoint (Path) belum di-assign di Spawner!", this);
-            this.enabled = false; // Matikan spawner jika path tidak ada
+            // Pastikan tombol sembunyi saat wave berjalan
+            startWaveButton.gameObject.SetActive(false);
+
+            Wave currentWave = levelSettings.Waves[_currentWaveIndex];
+            CalculateWaveEnemies(currentWave);
+            StartCoroutine(SpawnWaveCoroutine(currentWave));
         }
     }
-
-    private void Update()
+    private void CalculateWaveEnemies(Wave wave)
     {
-        _spawnTimer -= Time.deltaTime;
-
-        if (_spawnTimer < 0)
+        _enemiesAlive = 0;
+        foreach (var group in wave.EnemyGroups)
         {
-            _spawnTimer = delayBtwSpawns;
+            _enemiesAlive += group.EnemyCount;
+        }
+    }
+    private IEnumerator SpawnWaveCoroutine(Wave wave)
+    {
+        yield return new WaitForSeconds(wave.TimeBeforeWave);
 
-            if (_enemiesSpawned < enemyCount)
+        foreach (EnemyGroup group in wave.EnemyGroups)
+        {
+            for (int i = 0; i < group.EnemyCount; i++)
             {
-                _enemiesSpawned++;
-                SpawnEnemy();
+                SpawnEnemy(group.EnemyPrefab);
+                yield return new WaitForSeconds(group.SpawnInterval);
             }
         }
     }
-
-    private void SpawnEnemy()
+    private void SetupPoolers()
     {
-        GameObject newInstance = _pooler.GetInstanceFromPool();
+        _poolerDictionary = new Dictionary<string, ObjectPooler>();
 
-        // 1. Dapatkan komponen Enemy
-        Enemy enemy = newInstance.GetComponent<Enemy>();
+        // Cari semua komponen ObjectPooler di anak-anak GameObject Spawner
+        ObjectPooler[] poolers = GetComponentsInChildren<ObjectPooler>();
 
-        if (enemy != null)
+        foreach (ObjectPooler pooler in poolers)
         {
-            // 2. Set posisi musuh ke TITIK AWAL path
-            // Kita panggil method dari Waypoint.cs
+            // Kita gunakan nama GameObject poolernya sebagai Kunci (Key)
+            // Pastikan nama GameObject poolernya mengandung nama musuh (misal "Pool - Rino")
+            _poolerDictionary.Add(pooler.gameObject.name, pooler);
+        }
+    }
+
+    private void SpawnEnemy(GameObject enemyPrefab)
+    {
+        // Cari Pooler yang tepat berdasarkan nama Prefab
+        ObjectPooler poolerToUse = FindPoolerFor(enemyPrefab);
+
+        if (poolerToUse != null)
+        {
+            GameObject newInstance = poolerToUse.GetInstanceFromPool();
+
+            // --- LOGIKA DARI KODEMU YANG BENAR ---
+
+            // 1. Ambil skrip Enemy
+            Enemy enemyScript = newInstance.GetComponent<Enemy>();
+
+            // 2. Set posisi ke titik awal Waypoint
             newInstance.transform.position = path.GetWayPointPosition(0);
 
-            // 3. Beri tahu musuh path mana yang harus diikuti
-            enemy.SetPath(path);
+            // 3. Set jalur (Path) ke musuh
+            enemyScript.SetPath(path); // Asumsi namamu SetPath atau SetWaypoint
+
+            // 4. Aktifkan
+            newInstance.SetActive(true);
+
+            // -------------------------------------
         }
         else
         {
-            Debug.LogError("Prefab musuh tidak memiliki komponen Enemy.cs!", newInstance);
+            Debug.LogError($"Tidak ada Object Pooler untuk musuh: {enemyPrefab.name}. Pastikan nama GameObject Pool mengandung nama Prefab.");
         }
+    }
 
-        // 4. Baru aktifkan musuh
-        newInstance.SetActive(true);
+    private ObjectPooler FindPoolerFor(GameObject prefab)
+    {
+        ObjectPooler[] allPoolers = GetComponentsInChildren<ObjectPooler>();
+        foreach(var pool in allPoolers)
+        {
+            if (pool.name.Contains(prefab.name)) 
+            {
+                return pool;
+            }
+        }
+        return null;
+    }
+    private void OnEnable()
+    {
+        Enemy.OnEndReached += HandleEnemyGone;
+        EnemyHealth.OnEnemyKilled += HandleEnemyGone;
+    }
+
+    private void OnDisable()
+    {
+        Enemy.OnEndReached -= HandleEnemyGone;
+        EnemyHealth.OnEnemyKilled -= HandleEnemyGone;
+    }
+
+    private void HandleEnemyGone(Enemy enemy)
+    {
+        _enemiesAlive--;
+        if (_enemiesAlive <= 0)
+        {
+            FinishWave();
+        }
+    }
+    private void FinishWave()
+    {
+        Debug.Log($"Wave {_currentWaveIndex + 1} Selesai!");
+        OnWaveCompleted?.Invoke();
+
+        _currentWaveIndex++;
+
+        if (_currentWaveIndex >= levelSettings.Waves.Count)
+        {
+            Debug.Log("LEVEL COMPLETED! MENANG!");
+            OnLevelCompleted?.Invoke();
+        }
+        else
+        {
+            // --- INI PERUBAHANNYA ---
+            // Karena ini BUKAN awal game (tapi akhir wave 1),
+            // Kita TAMPILKAN tombol agar pemain bisa lanjut ke Wave 2
+            // kapanpun mereka siap.
+            startWaveButton.gameObject.SetActive(true);
+        }
     }
 }
