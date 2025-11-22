@@ -52,7 +52,6 @@ public class Turret : MonoBehaviour
     private void Update()
     {
         GetCurrentEnemyTarget();
-        RotateTowardsTarget();
         HandleShooting();
     }
 
@@ -86,14 +85,23 @@ public class Turret : MonoBehaviour
 
         // Set posisi & rotasi proyektil
         projectileGO.transform.position = projectileSpawnPoint.position;
-        projectileGO.transform.rotation = projectileSpawnPoint.rotation;
-        
-        // Ini adalah bagian TERPENTING:
-        // Memberi tahu proyektil siapa targetnya
-        projectile.SetTarget(CurrentEnemyTarget);
 
-        // Aktifkan proyektil
+        if (CurrentEnemyTarget != null)
+        {
+            Vector3 direction = CurrentEnemyTarget.transform.position - projectileSpawnPoint.position;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            
+            // Sesuaikan offset -90f / 0f / -180f tergantung sprite pelurumu
+            projectileGO.transform.rotation = Quaternion.Euler(0, 0, angle); 
+            // Jika sprite roketmu menghadap atas, pakai: angle - 90f
+        }
+        else
+        {
+            // Jika target hilang sesaat sebelum nembak, pakai rotasi default spawn point
+            projectileGO.transform.rotation = projectileSpawnPoint.rotation;
+        }
         projectileGO.SetActive(true);
+        projectile.SetTarget(CurrentEnemyTarget);
     }
 
     // --- Sisa skrip (GetCurrentEnemyTarget, RotateTowardsTarget, OnTrigger, dll) ---
