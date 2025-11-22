@@ -38,11 +38,20 @@ public class Enemy : MonoBehaviour
         if (_enemyHealth == null)
             _enemyHealth = GetComponent<EnemyHealth>();
         
-        // Reset status musuh
+        // Reset status posisi path
         _currentWaypointIndex = 0;
         
+        // Reset kecepatan
         _originalSpeed = MoveSpeed;
         _animator.speed = 1f;
+
+        // --- BAGIAN INI YANG HILANG TADI ---
+        // Wajib reset status blokir agar musuh baru tidak diam
+        _isBlocked = false;      
+        _blockingSoldier = null; 
+        
+        // Pastikan tidak ada coroutine serangan dari kehidupan sebelumnya yang nyangkut
+        StopAllCoroutines();     
     }
 
     void Awake()
