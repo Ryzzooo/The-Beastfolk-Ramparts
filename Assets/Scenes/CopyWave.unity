@@ -632,7 +632,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 10
-  CurrentWaveText: {fileID: 625937374}
 --- !u!114 &64929787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3961,6 +3960,7 @@ MonoBehaviour:
   levelSettings: {fileID: 11400000, guid: 27340da87c4292040b995c9018f5a052, type: 2}
   path: {fileID: 865800251}
   startWaveButton: {fileID: 1909824903}
+  CurrentWaveText: {fileID: 625937374}
 --- !u!1 &894974784
 GameObject:
   m_ObjectHideFlags: 0
@@ -7294,7 +7294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 322, y: 449}
+  m_AnchoredPosition: {x: -767, y: 295}
   m_SizeDelta: {x: 106.7393, y: 82.6889}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1909824903

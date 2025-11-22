@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 public class Spawner : MonoBehaviour
@@ -14,6 +15,7 @@ public class Spawner : MonoBehaviour
 
     [Header("UI References")]
     [SerializeField] private Button startWaveButton;
+    [SerializeField] private TextMeshProUGUI CurrentWaveText;
 
     private int _currentWaveIndex = 0;
     private int _enemiesAlive;
@@ -40,7 +42,10 @@ public class Spawner : MonoBehaviour
         {
             // Pastikan tombol sembunyi saat wave berjalan
             startWaveButton.gameObject.SetActive(false);
-
+            if (CurrentWaveText != null)
+            {
+                CurrentWaveText.text = (_currentWaveIndex + 1).ToString();
+            }
             Wave currentWave = levelSettings.Waves[_currentWaveIndex];
             CalculateWaveEnemies(currentWave);
             StartCoroutine(SpawnWaveCoroutine(currentWave));
@@ -147,11 +152,11 @@ public class Spawner : MonoBehaviour
     }
     private void FinishWave()
     {
+
         Debug.Log($"Wave {_currentWaveIndex + 1} Selesai!");
         OnWaveCompleted?.Invoke();
 
         _currentWaveIndex++;
-
         if (_currentWaveIndex >= levelSettings.Waves.Count)
         {
             Debug.Log("LEVEL COMPLETED! MENANG!");
