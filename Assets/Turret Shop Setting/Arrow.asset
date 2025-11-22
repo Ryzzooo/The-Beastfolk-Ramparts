@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eab8afb628a41343b1cbabb620ae26d, type: 3}
   m_Name: Arrow
   m_EditorClassIdentifier: 
-  TurretPrefab: {fileID: 4897654944466209061, guid: c7b45df65d715ec4ababb8f7e1a5fea9, type: 3}
+  TurretPrefab: {fileID: 4897654944466209061, guid: 5c9c550dfe47956479e4e4b4452ea787, type: 3}
   TurretShopCost: 40
-  TurretShopSprite: {fileID: 8605881140359049577, guid: 772a7e846d3b7a54f999304980d4d16b, type: 3}
+  TurretShopSprite: {fileID: -720939325198882484, guid: 9e4cd9cc15970254aa49bb2344cc0e1f, type: 3}
+  UpgradeTo: {fileID: 11400000, guid: 9c5be9994cee3d34c9b3fa369eca6cbc, type: 2}
+  UpgradeCost: 75
