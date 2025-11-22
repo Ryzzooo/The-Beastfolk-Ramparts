@@ -18,7 +18,7 @@ MonoBehaviour:
     - EnemyPrefab: {fileID: 6827977386324379469, guid: a62f9496eb42bb24eb398dd5d172975f, type: 3}
       EnemyCount: 3
       SpawnInterval: 0.5
-    - EnemyPrefab: {fileID: 6827977386324379469, guid: 5379dabedf27a5c43b2f68a31c12b543, type: 3}
+    - EnemyPrefab: {fileID: 6827977386324379469, guid: 657720bdba374714eb8b4e94727ccb9e, type: 3}
       EnemyCount: 5
       SpawnInterval: 0.7
   - TimeBeforeWave: 2
@@ -26,6 +26,6 @@ MonoBehaviour:
     - EnemyPrefab: {fileID: 6827977386324379469, guid: a62f9496eb42bb24eb398dd5d172975f, type: 3}
       EnemyCount: 3
       SpawnInterval: 1
-    - EnemyPrefab: {fileID: 6827977386324379469, guid: 5379dabedf27a5c43b2f68a31c12b543, type: 3}
+    - EnemyPrefab: {fileID: 6827977386324379469, guid: 657720bdba374714eb8b4e94727ccb9e, type: 3}
       EnemyCount: 5
       SpawnInterval: 2
