@@ -2,18 +2,36 @@ using UnityEngine;
 
 public class TurretUpgrade : MonoBehaviour
 {
-    // Kita akan simpan data turretnya di sini
     private TurretSettings _turretSettings;
     
-    // TODO: Tambahkan logika untuk level upgrade nanti
-
-    // Dipanggil oleh BuildManager saat turret dibangun
     public void SetTurSettings(TurretSettings settings)
     {
         _turretSettings = settings;
     }
 
-    // Metode ini dipanggil oleh Node.cs
+    public bool CanUpgrade()
+    {
+        if (_turretSettings == null) return false;
+
+        // Bisa upgrade JIKA:
+        // 1. Ada data upgrade-nya (tidak kosong)
+        // 2. Uang player cukup
+        return _turretSettings.UpgradeTo != null && 
+               CurrencySystem.Instance.TotalCoins >= _turretSettings.UpgradeCost;
+    }
+
+    public TurretSettings GetUpgradeTo()
+    {
+        if (_turretSettings != null) return _turretSettings.UpgradeTo;
+        return null;
+    }
+
+    public int GetUpgradeCost()
+    {
+        if (_turretSettings != null) return _turretSettings.UpgradeCost;
+        return 0;
+    }
+
     public int GetSellValue()
     {
         if (_turretSettings == null)

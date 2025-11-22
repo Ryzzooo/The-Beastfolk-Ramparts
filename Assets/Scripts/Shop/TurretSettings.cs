@@ -8,4 +8,8 @@ public class TurretSettings : ScriptableObject
     public GameObject TurretPrefab;
     public int TurretShopCost;
     public Sprite TurretShopSprite;
+
+    [Header("Upgrade Info")]
+    public TurretSettings UpgradeTo; 
+    public int UpgradeCost;
 }

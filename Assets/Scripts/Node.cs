@@ -20,17 +20,15 @@ public class Node : MonoBehaviour
     {
         Debug.Log("Node diklik!");
 
-        // Cek apakah node ini SUDAH ADA isinya
         if (turretOnNode != null)
         {
-            // TODO: Buka UI Upgrade/Sell
-            Debug.Log("Node ini sudah ada turretnya.");
+            // Simpan seleksi (agar highlight nyala)
+            BuildManager.Instance.SetSelectedNode(this);
+            
+            // Buka Panel Upgrade
+            UIManager.Instance.OpenUpgradePanel(this);
             return;
         }
-
-        // --- INI BAGIAN PENTING ---
-        // Jika kosong, beritahu UIManager untuk membuka shop
-        // dan beritahu BuildManager node mana yang dipilih
         
         // (Kita akan buat skrip-skrip ini di langkah berikutnya)
         BuildManager.Instance.SetSelectedNode(this);
@@ -48,6 +46,41 @@ public class Node : MonoBehaviour
     {
         if (selectionHighlight != null)
             selectionHighlight.SetActive(false);
+    }
+
+    public void UpgradeTurret()
+    {
+        if (turretOnNode == null) return;
+
+        TurretUpgrade upgradeScript = turretOnNode.GetComponent<TurretUpgrade>();
+
+        if (upgradeScript == null || !upgradeScript.CanUpgrade())
+        {
+            Debug.Log("Tidak bisa upgrade.");
+            return;
+        }
+
+        // Bayar & Bangun
+        CurrencySystem.Instance.RemoveCoins(upgradeScript.GetUpgradeCost());
+        BuildManager.Instance.UpgradeTurretOnNode(this, upgradeScript.GetUpgradeTo());
+        
+        UIManager.Instance.CloseUpgradePanel();
+    }
+
+    // --- FUNGSI SELL (Disini tempatnya!) ---
+    public void SellTurret()
+    {
+        if (turretOnNode == null) return;
+
+        TurretUpgrade upgradeScript = turretOnNode.GetComponent<TurretUpgrade>();
+        int sellValue = (upgradeScript != null) ? upgradeScript.GetSellValue() : 0;
+
+        CurrencySystem.Instance.AddCoins(sellValue);
+        Destroy(turretOnNode.gameObject);
+        turretOnNode = null;
+        
+        DeselectNode(); // Matikan highlight
+        UIManager.Instance.CloseUpgradePanel();
     }
 
     public void SelectNode()

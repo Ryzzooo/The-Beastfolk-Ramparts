@@ -53,6 +53,7 @@ public class Turret : MonoBehaviour
     {
         GetCurrentEnemyTarget();
         RotateTowardsTarget();
+        HandleShooting();
     }
 
     private void HandleShooting()

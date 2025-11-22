@@ -22,6 +22,35 @@ public class BuildManager : Singleton<BuildManager>
         _selectedNode.SelectNode();
     }
 
+    public void UpgradeTurretOnNode(Node node, TurretSettings newSettings)
+    {
+        // 1. Hancurkan Turret Lama (tanpa jual/dapat uang)
+        if (node.turretOnNode != null)
+        {
+            Destroy(node.turretOnNode.gameObject);
+        }
+
+        // 2. Bangun Turret Baru (Level selanjutnya)
+        GameObject turretInstance = Instantiate(
+            newSettings.TurretPrefab, 
+            node.transform.position, 
+            Quaternion.identity
+        );
+
+        // 3. Setup Turret Baru
+        Turret turretComponent = turretInstance.GetComponent<Turret>();
+        node.turretOnNode = turretComponent; // Update data di Node
+
+        TurretUpgrade upgradeComponent = turretInstance.GetComponent<TurretUpgrade>();
+        if (upgradeComponent != null)
+        {
+            upgradeComponent.SetTurSettings(newSettings);
+        }
+        
+        // Efek visual (opsional)
+        Debug.Log("Turret berhasil di-upgrade!");
+    }
+
     // Metode ini akan dipanggil oleh Tombol Shop (Langkah 3)
     public void BuildTurretOnSelectedNode(TurretSettings turretToBuild)
     {
