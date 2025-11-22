@@ -4,6 +4,10 @@ using System.Collections;
 public class LightningSpell : MonoBehaviour
 {
     [Header("Settings")]
+
+    [Tooltip("Biaya Mana untuk Spell ini")]
+    [SerializeField] private float manaCost = 50f;
+
     [Tooltip("Besar damage yang diberikan ke SETIAP musuh")]
     [SerializeField] private float damageAmount = 10f;
     
@@ -19,6 +23,11 @@ public class LightningSpell : MonoBehaviour
         {
             Debug.Log("Lightning Spell sedang cooldown!");
             return;
+        }
+
+        if (PlayerMana.Instance == null || !PlayerMana.Instance.TryConsumeMana(manaCost))
+        {
+            return; 
         }
 
         StartCoroutine(ProcessLightning());
