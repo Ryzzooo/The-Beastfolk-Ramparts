@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 using System; // Diperlukan untuk Action
 
 public class LevelManager : Singleton<LevelManager>
 {
     [SerializeField] private int lives = 10;
+    [SerializeField] private TextMeshProUGUI CurrentWaveText;
     
     public int TotalLives { get; set; }
     public int CurrentWave { get; set; }
@@ -12,6 +14,7 @@ public class LevelManager : Singleton<LevelManager>
     {
         TotalLives = lives;
         CurrentWave = 1;
+        CurrentWaveText.text = CurrentWave.ToString();
     }
 
     // Metode ini akan dipanggil oleh event Enemy.OnEndReached
@@ -39,6 +42,7 @@ public class LevelManager : Singleton<LevelManager>
         // Misalnya: Berikan Gold, Tampilkan UI, hitung mundur wave berikutnya
         Debug.Log("Wave Selesai!");
         CurrentWave++;
+        CurrentWaveText.text = CurrentWave.ToString();
     }
 
     private void OnEnable()
