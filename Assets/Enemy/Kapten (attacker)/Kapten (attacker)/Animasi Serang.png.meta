@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 3e8f82c4075ae6d43874b00da24a56d4
+guid: 961d853438b496e469f59193eeaad4db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8111196365211033594
-    second: Screenshot 2025-11-18 134430_0
+      213: 3810954129876003908
+    second: Animasi Serang_0
+  - first:
+      213: -6813273074645236219
+    second: Animasi Serang_1
+  - first:
+      213: -7207429560154785895
+    second: Animasi Serang_2
+  - first:
+      213: -5246048487553129036
+    second: Animasi Serang_3
+  - first:
+      213: -4178623466629691953
+    second: Animasi Serang_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +108,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Screenshot 2025-11-18 134430_0
+      name: Animasi Serang_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 73
-        height: 72
+        x: 65
+        y: 350
+        width: 362
+        height: 647
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: affd7d38e12c09070800000000000000
-      internalID: 8111196365211033594
+      spriteID: 44c219ef69a33e430800000000000000
+      internalID: 3810954129876003908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animasi Serang_1
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 350
+        width: 362
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5068904ac346271a0800000000000000
+      internalID: -6813273074645236219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animasi Serang_2
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 350
+        width: 446
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997f25b60011afb90800000000000000
+      internalID: -7207429560154785895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animasi Serang_3
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 350
+        width: 532
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5abe002ba4237b0800000000000000
+      internalID: -5246048487553129036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animasi Serang_4
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 350
+        width: 362
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc50d6da81c8206c0800000000000000
+      internalID: -4178623466629691953
       vertices: []
       indices: 
       edges: []
@@ -147,8 +234,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Screenshot 2025-11-18 134430_0: 8111196365211033594
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

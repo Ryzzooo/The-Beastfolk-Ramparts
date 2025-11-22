@@ -4,6 +4,9 @@ using System.Collections;
 public class FreezeSpell : MonoBehaviour
 {
     [Header("Settings")]
+    [Tooltip("Biaya Mana untuk Spell ini")]
+    [SerializeField] private float manaCost = 30f;
+
     [Tooltip("Berapa lama musuh akan beku (detik)")]
     [SerializeField] private float freezeDuration = 3f;
     
@@ -19,6 +22,10 @@ public class FreezeSpell : MonoBehaviour
         {
             Debug.Log("Spell sedang cooldown!");
             return;
+        }
+        if (PlayerMana.Instance == null || !PlayerMana.Instance.TryConsumeMana(manaCost))
+        {
+            return; 
         }
 
         StartCoroutine(FreezeProcess());

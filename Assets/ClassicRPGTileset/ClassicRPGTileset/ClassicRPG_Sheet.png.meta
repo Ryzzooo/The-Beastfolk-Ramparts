@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ClassicRPG_Sheet_0: -4311222478576118281
+      ClassicRPG_Sheet_1: 885190975492938175
+      ClassicRPG_Sheet_2: -1458624466635194702
+      ClassicRPG_Sheet_3: -3438813485491277264
+      ClassicRPG_Sheet_4: 385300918033915674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

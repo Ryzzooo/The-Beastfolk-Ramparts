@@ -3,6 +3,9 @@ using UnityEngine;
 public class ReinforcementSpell : MonoBehaviour
 {
     [Header("Settings")]
+
+    [Tooltip("Biaya Mana untuk Spell ini")]
+    [SerializeField] private float manaCost = 20f;
     [SerializeField] private GameObject soldierPrefab;
     [SerializeField] private int soldierCount = 2;
     [SerializeField] private float cooldownTime = 20f;
@@ -38,6 +41,12 @@ public class ReinforcementSpell : MonoBehaviour
         if (_isOnCooldown)
         {
             Debug.Log("Spell sedang Cooldown!");
+            return;
+        }
+
+        if (PlayerMana.Instance == null || PlayerMana.Instance.CurrentMana < manaCost)
+        {
+            Debug.Log("Mana tidak cukup untuk memanggil bala bantuan.");
             return;
         }
 
