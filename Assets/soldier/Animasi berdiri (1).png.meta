@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Animasi berdiri (1)_0: 8376410805234862681
+      Animasi berdiri (1)_1: 8888511862330432471
+      Animasi berdiri (1)_2: -2273865221481729568
+      Animasi berdiri (1)_3: -2961809639864746144
+      Animasi berdiri (1)_4: -6992444247037163768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
