@@ -84,7 +84,7 @@ MonoBehaviour:
   turretModel: {fileID: 2227106433014461516}
   attackRange: 3
   rotationSpeed: 5
-  projectilePrefab: {fileID: 5113451004991640090, guid: 7d51df5017e753f45a4c9d4a59b71204, type: 3}
+  projectilePrefab: {fileID: 5113451004991640090, guid: cace56921f9256448a83f06587be621f, type: 3}
   projectileSpawnPoint: {fileID: 65441798458721968}
   attackCooldown: 1
 --- !u!58 &3870463622615389894
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445c709da277ffe458a0166f6d84d1da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5113451004991640090, guid: 7d51df5017e753f45a4c9d4a59b71204, type: 3}
+  prefab: {fileID: 5113451004991640090, guid: cace56921f9256448a83f06587be621f, type: 3}
   poolSize: 10
 --- !u!114 &8171455909703383352
 MonoBehaviour:
