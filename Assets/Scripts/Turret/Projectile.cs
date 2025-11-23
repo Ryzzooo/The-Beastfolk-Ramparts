@@ -62,15 +62,17 @@ public class Projectile : MonoBehaviour
     // Metode saat proyektil mengenai target
     private void RotateProjectile()
     {
+        // Arah dari Panah ke Musuh
         Vector2 direction = _target.transform.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        // --- SESUAIKAN OFFSET INI ---
-        // Jika gambar Panah menghadap KANAN (-->), pakai: angle
-        // Jika gambar Panah menghadap ATAS (^), pakai: angle - 90f
-        
-        transform.rotation = Quaternion.Euler(0, 0, angle + rotationOffset);
-        // Ganti jadi (0, 0, angle - 90f) kalau panahmu tegak lurus di gambar aslinya
+        // CARA SIMPLE: Paksa sisi "Kanan" (Sumbu Merah) panah menghadap ke musuh
+        transform.right = direction;
+
+        // PENTING:
+        // Jika setelah pakai kode ini panahmu malah menghadap ke ATAS/BAWAH:
+        // Jangan ubah kodingannya.
+        // Buka Prefab -> Klik Child Sprite -> Putar Rotation Z Sprite-nya 
+        // sampai gambarnya menghadap ke KANAN (Sesuai panah merah Unity).
     }
 
     // Metode untuk memutar proyektil agar menghadap target

@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4352876904798939417}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.314, z: 0}
+  m_LocalPosition: {x: 0.31, y: 0.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81,12 +81,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ea955109a6979042b893298bf4356fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretModel: {fileID: 2227106433014461516}
-  attackRange: 3
-  rotationSpeed: 5
+  characterSprite: {fileID: 0}
+  characterAnimator: {fileID: 0}
+  attackRange: 9
   projectilePrefab: {fileID: 5113451004991640090, guid: 606d79cf8b175f04ab9c40ba5403482e, type: 3}
   projectileSpawnPoint: {fileID: 65441798458721968}
   attackCooldown: 1
+  shootDelay: 1
 --- !u!58 &3870463622615389894
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -218,7 +219,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.00000017881, y: -2.8e-14, z: 0}
-  m_LocalScale: {x: 0.052104004, y: 0.052104004, z: 0}
+  m_LocalScale: {x: 0.09337038, y: 0.09337038, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6136633824471345050}
