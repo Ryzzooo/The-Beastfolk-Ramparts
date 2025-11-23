@@ -2701,7 +2701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSlider: {fileID: 190065955}
   sfxSlider: {fileID: 1577011293}
-  introVideo: {fileID: 32900000, guid: fca8900237496f646b6681881e69d2c7, type: 3}
+  introVideo: {fileID: 32900000, guid: 3ed97cd8cd3ff8541a537949b60682bc, type: 3}
   firstLevelSceneName: Tutorial
 --- !u!114 &1100677841
 MonoBehaviour:
