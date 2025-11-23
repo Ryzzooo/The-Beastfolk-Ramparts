@@ -1,21 +1,24 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq; 
+using System.Collections;
 
 public class Turret : MonoBehaviour
 {
-    [Header("References")]
-    [Tooltip("Bagian turret yang akan berputar (laras)")]
-    [SerializeField] private Transform turretModel; 
+    [Tooltip("Sprite Karakter (Archer/Mage) untuk di-flip")]
+    [SerializeField] private SpriteRenderer characterSprite;
+    [Tooltip("Animator Karakter (untuk animasi serangan)")]
+    [SerializeField] private Animator characterAnimator;
 
     [Header("Attributes")]
     [SerializeField] private float attackRange = 4f;
-    [SerializeField] private float rotationSpeed = 10f; 
 
     [Header("Shooting")] // <-- TAMBAHAN BARU
     [SerializeField] private GameObject projectilePrefab; // Prefab proyektil (dari gambarmu)
     [SerializeField] private Transform projectileSpawnPoint; // Titik laras tempat peluru keluar
     [SerializeField] private float attackCooldown = 1f; // Waktu jeda antar tembakan
+    [Tooltip("Berapa detik jeda antara animasi mulai sampai peluru keluar? Sesuaikan dengan gerakan tangan archer.")]
+    [SerializeField] private float shootDelay = 0.5f;
 
     // Variabel dari kodemu
     private List<Enemy> _enemies = new List<Enemy>();
@@ -33,7 +36,7 @@ public class Turret : MonoBehaviour
     private void Awake()
     {
         _rangeCollider = GetComponent<CircleCollider2D>();
-        _rangeCollider.radius = attackRange;
+        
         TurretUpgrade = GetComponent<TurretUpgrade>();
         if (TurretUpgrade == null)
         {
@@ -41,18 +44,29 @@ public class Turret : MonoBehaviour
         }
 
         // Ambil pooler yang ada di turret ini
-        _pooler = GetComponent<ObjectPooler>(); 
-
-        if (turretModel == null)
-        {
-            turretModel = transform;
-        }
+        _pooler = GetComponent<ObjectPooler>();
     }
 
     private void Update()
     {
         GetCurrentEnemyTarget();
         HandleShooting();
+        HandleSpriteFlip();   
+    }
+
+    private void HandleSpriteFlip()
+    {
+        // Jika tidak ada target ATAU tidak ada sprite karakter (misal Mortar), jangan lakukan apa-apa
+        if (_currentEnemyTarget == null || characterSprite == null) return;
+
+        // Cek posisi X musuh relatif terhadap tower
+        bool enemyIsOnRight = _currentEnemyTarget.transform.position.x > transform.position.x;
+
+        // Atur flipX berdasarkan posisi musuh
+        // Asumsi: Gambar asli Archer menghadap KANAN
+        // Jika musuh di Kanan -> FlipX = false (Tetap hadap kanan)
+        // Jika musuh di Kiri  -> FlipX = true (Balik hadap kiri)
+        characterSprite.flipX = !enemyIsOnRight;
     }
 
     private void HandleShooting()
@@ -70,36 +84,49 @@ public class Turret : MonoBehaviour
         // Jika timer habis, tembak!
         if (_cooldownTimer <= 0f)
         {
-            Fire();
+            StartCoroutine(FireRoutine());
             _cooldownTimer = attackCooldown; // Reset timer
         }
     }
 
-    private void Fire()
+    private IEnumerator FireRoutine()
     {
-        // Ambil proyektil dari pool
-        GameObject projectileGO = _pooler.GetInstanceFromPool();
+        // 1. MAINKAN ANIMASI DULUAN
+        if (characterAnimator != null)
+        {
+            characterAnimator.SetTrigger("Shoot");
+        }
 
-        // Ambil skrip Projectile.cs dari proyektil itu
+        // 2. TUNGGU SEBENTAR (Sesuai gerakan menarik busur)
+        // Archer menarik tali... tahan...
+        yield return new WaitForSeconds(shootDelay);
+
+        // 3. BARU KELUARKAN PELURU (LEPAS!)
+        // Cek lagi apakah target masih ada (bisa saja mati saat kita menunggu delay)
+        if (CurrentEnemyTarget != null || transform.name.Contains("Mortar")) 
+        {
+             SpawnProjectile(); // Panggil fungsi spawn peluru
+        }
+    }
+
+    private void SpawnProjectile()
+    {
+        GameObject projectileGO = _pooler.GetInstanceFromPool();
         Projectile projectile = projectileGO.GetComponent<Projectile>();
 
-        // Set posisi & rotasi proyektil
         projectileGO.transform.position = projectileSpawnPoint.position;
 
         if (CurrentEnemyTarget != null)
         {
             Vector3 direction = CurrentEnemyTarget.transform.position - projectileSpawnPoint.position;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            
-            // Sesuaikan offset -90f / 0f / -180f tergantung sprite pelurumu
             projectileGO.transform.rotation = Quaternion.Euler(0, 0, angle); 
-            // Jika sprite roketmu menghadap atas, pakai: angle - 90f
         }
         else
         {
-            // Jika target hilang sesaat sebelum nembak, pakai rotasi default spawn point
             projectileGO.transform.rotation = projectileSpawnPoint.rotation;
         }
+
         projectileGO.SetActive(true);
         projectile.SetTarget(CurrentEnemyTarget);
     }
@@ -111,15 +138,6 @@ public class Turret : MonoBehaviour
     {
         _enemies.RemoveAll(e => e == null || !e.gameObject.activeInHierarchy);
         _currentEnemyTarget = (_enemies.Count > 0) ? _enemies[0] : null;
-    }
-
-    private void RotateTowardsTarget()
-    {
-        if (_currentEnemyTarget == null) return;
-        Vector2 direction = CurrentEnemyTarget.transform.position - turretModel.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion targetRotation = Quaternion.Euler(0, 0, angle);
-        turretModel.rotation = Quaternion.Slerp(turretModel.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
     
     private void OnTriggerEnter2D(Collider2D other)
