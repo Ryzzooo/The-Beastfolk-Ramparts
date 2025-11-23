@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class Node : MonoBehaviour
     // Ini akan otomatis dipanggil saat GameObject ini diklik
     private void OnMouseDown()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return; // Jika ya, STOP! Jangan jalankan kode di bawah.
+        }
         Debug.Log("Node diklik!");
 
         if (turretOnNode != null)
