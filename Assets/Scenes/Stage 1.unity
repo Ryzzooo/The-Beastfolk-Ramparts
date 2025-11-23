@@ -707,7 +707,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 10
-  CurrentWaveText: {fileID: 625937374}
 --- !u!114 &64929787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,6 +1311,9 @@ MonoBehaviour:
   manaCost: 50
   damageAmount: 7
   cooldownTime: 15
+  videoPlayer: {fileID: 0}
+  videoScreenObj: {fileID: 0}
+  delayBeforeDamage: 1
 --- !u!114 &187539759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3838,9 +3840,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a4dc0452c8dad3418cee9a4fc9d09b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCount: 10
-  delayBtwSpawns: 1
+  levelSettings: {fileID: 0}
   path: {fileID: 865800251}
+  startWaveButton: {fileID: 0}
+  CurrentWaveText: {fileID: 0}
 --- !u!1 &894974784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3896,9 +3899,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manaCost: 20
-  soldierPrefab: {fileID: 8326739504420767046, guid: eee1461c9e4c604439a1b4e4d01910b4, type: 3}
-  soldierCount: 2
   cooldownTime: 20
+  soldierPrefab1: {fileID: 0}
+  soldierPrefab2: {fileID: 0}
   rangePreview: {fileID: 97032358}
   soldierSpacing: 0.7
 --- !u!114 &894974787
