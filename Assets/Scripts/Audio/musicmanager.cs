@@ -64,7 +64,7 @@ public class MusicManager : MonoBehaviour
         switch (sceneName)
         {
             case "Menu":
-                PlayMusic("menu");
+                PlayMusic("Menu");
                 break;
             case "Stage1":
                 PlayMusic("Stage1");
