@@ -15,14 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage1.unity
     guid: 4c068bed5d252bd4ca5d0f9b22c0a63e
   - enabled: 1
+    path: Assets/Scenes/Cutscene1.unity
+    guid: 958eb88e5f6365c4c8778675cd3a0785
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: b5396600e8f19b84891bad3abcc4536f
+  - enabled: 1
+    path: Assets/Scenes/Stage3.unity
+    guid: a04b494c89340dd4b8b159f9ebc829eb
+  - enabled: 1
     path: Assets/Scenes/sdfgh.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/Cutscene1.unity
-    guid: 3bedbfcdea4843a40825aa6d5ea8fe52
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: e58ad953dde16774997f7bfb8d48d9e8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
