@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         // Memulai dialog pertama saat game jalan
         textComponent.text = "";
         StartDialogue();
