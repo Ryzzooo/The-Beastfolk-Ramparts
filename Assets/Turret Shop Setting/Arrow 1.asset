@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6eab8afb628a41343b1cbabb620ae26d, type: 3}
-  m_Name: Mage
+  m_Name: Arrow 1
   m_EditorClassIdentifier: 
-  TurretPrefab: {fileID: 4897654944466209061, guid: 9438058e3ab5ad443b06feee6bbd29dc, type: 3}
-  TurretShopCost: 50
-  TurretShopSprite: {fileID: -5990178031180163311, guid: d8632ce4fb46d04469a768aae852a444, type: 3}
-  UpgradeTo: {fileID: 11400000, guid: f232d94a4e2bb6146b54a7d37f1bd1d5, type: 2}
-  UpgradeCost: 80
+  TurretPrefab: {fileID: 4897654944466209061, guid: 604ba668f313f8743a494054a8ee0926, type: 3}
+  TurretShopCost: 75
+  TurretShopSprite: {fileID: -7251168017167092725, guid: 25922e524955bc6469663ff64b00699f, type: 3}
+  UpgradeTo: {fileID: 0}
+  UpgradeCost: 0
