@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Harp (VN) _0: 8280182728799148364
+      Harp (VN) _1: -2871386388821297137
+      Harp (VN) _2: 6853616183467856429
+      Harp (VN) _3: 9121931124344819873
+      Harp (VN) _4: -3814270537828535865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
