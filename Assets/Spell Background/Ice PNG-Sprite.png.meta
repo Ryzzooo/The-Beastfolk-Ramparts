@@ -156,6 +156,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -634,7 +647,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ice PNG-Sprite_0: 4182844081740941645
+      Ice PNG-Sprite_1: -1822873778237121532
+      Ice PNG-Sprite_10: 6517850147250547486
+      Ice PNG-Sprite_11: 1293322203454159757
+      Ice PNG-Sprite_12: 7710648463127417268
+      Ice PNG-Sprite_13: -3983348597446386940
+      Ice PNG-Sprite_14: -9047404970392643521
+      Ice PNG-Sprite_15: 4460248715573552388
+      Ice PNG-Sprite_16: -8870556464642533813
+      Ice PNG-Sprite_17: 542494890880628446
+      Ice PNG-Sprite_18: -532273214031571419
+      Ice PNG-Sprite_19: -207887158926096341
+      Ice PNG-Sprite_2: 5522826624982919898
+      Ice PNG-Sprite_20: -127876086878222791
+      Ice PNG-Sprite_3: -6181473047044869626
+      Ice PNG-Sprite_4: -2182285874111944671
+      Ice PNG-Sprite_5: -3707142714523844788
+      Ice PNG-Sprite_6: -9057814874462692879
+      Ice PNG-Sprite_7: -6522266273220327580
+      Ice PNG-Sprite_8: 8689286267397854261
+      Ice PNG-Sprite_9: -1493576980930518176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

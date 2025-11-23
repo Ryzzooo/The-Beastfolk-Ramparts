@@ -207,6 +207,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1059,7 +1072,45 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lightning-Sprite_0: 4882693165544048558
+      Lightning-Sprite_1: 8122312782600459461
+      Lightning-Sprite_10: -508199311523409241
+      Lightning-Sprite_11: -7992775691789744767
+      Lightning-Sprite_12: -1017431517115556849
+      Lightning-Sprite_13: -161569057957228105
+      Lightning-Sprite_14: -8064357524055691869
+      Lightning-Sprite_15: 3958256932099625586
+      Lightning-Sprite_16: -8473524029926376355
+      Lightning-Sprite_17: 5824770653291779128
+      Lightning-Sprite_18: -6866999837088722772
+      Lightning-Sprite_19: -2494287833918770915
+      Lightning-Sprite_2: -76751146753467052
+      Lightning-Sprite_20: 7059919632279402364
+      Lightning-Sprite_21: -6130881355750023670
+      Lightning-Sprite_22: 5296349115079038139
+      Lightning-Sprite_23: 2486748845421200222
+      Lightning-Sprite_24: -8283914123907863303
+      Lightning-Sprite_25: -1125784296904559768
+      Lightning-Sprite_26: 2073922464004017965
+      Lightning-Sprite_27: 6715467126159968051
+      Lightning-Sprite_28: -2413180641454892759
+      Lightning-Sprite_29: 5196304504633419040
+      Lightning-Sprite_3: -7040146919522393849
+      Lightning-Sprite_30: 3710034696490724439
+      Lightning-Sprite_31: 5836229793627026884
+      Lightning-Sprite_32: -5731309819066569246
+      Lightning-Sprite_33: 2615010552871151378
+      Lightning-Sprite_34: -4599150290831222669
+      Lightning-Sprite_35: 2310814316543291983
+      Lightning-Sprite_36: -3156829116677312194
+      Lightning-Sprite_37: 3089635024077709620
+      Lightning-Sprite_4: -6092781425869179912
+      Lightning-Sprite_5: -338885830457116626
+      Lightning-Sprite_6: -9199644981428979596
+      Lightning-Sprite_7: 2709443455977905291
+      Lightning-Sprite_8: 7179020030657475536
+      Lightning-Sprite_9: -2187716218413989437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
