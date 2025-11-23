@@ -1,0 +1,748 @@
+fileFormatVersion: 2
+guid: 5fd8f3c0e89358341b36461a212444e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8858827145203637609
+    second: Latar 3_0
+  - first:
+      213: 8735661919871027384
+    second: Latar 3_1
+  - first:
+      213: -238518579939132967
+    second: Latar 3_2
+  - first:
+      213: 4265978197209558742
+    second: Latar 3_3
+  - first:
+      213: 1789398518299789400
+    second: Latar 3_4
+  - first:
+      213: -3317019759138386541
+    second: Latar 3_5
+  - first:
+      213: -7256448818267006242
+    second: Latar 3_6
+  - first:
+      213: 1343857574462300017
+    second: Latar 3_7
+  - first:
+      213: -3617902954262230177
+    second: Latar 3_8
+  - first:
+      213: -1784799046847046998
+    second: Latar 3_9
+  - first:
+      213: -1238984872854523411
+    second: Latar 3_10
+  - first:
+      213: 684212887872523801
+    second: Latar 3_11
+  - first:
+      213: -3117900967684958233
+    second: Latar 3_12
+  - first:
+      213: -8620114950872130617
+    second: Latar 3_13
+  - first:
+      213: 4904978306728324327
+    second: Latar 3_14
+  - first:
+      213: -6693661161349826002
+    second: Latar 3_15
+  - first:
+      213: 69297236026462527
+    second: Latar 3_16
+  - first:
+      213: 8613886454970908960
+    second: Latar 3_17
+  - first:
+      213: 5414169513555348281
+    second: Latar 3_18
+  - first:
+      213: 4895407806809905429
+    second: Latar 3_19
+  - first:
+      213: 5933974090187910147
+    second: Latar 3_20
+  - first:
+      213: -4874813297342670578
+    second: Latar 3_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Latar 3_0
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 504
+        width: 280
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792ac83c5af1f0580800000000000000
+      internalID: -8858827145203637609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_1
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 753
+        width: 448
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8c1db8b3e4b3970800000000000000
+      internalID: 8735661919871027384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_2
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 701
+        width: 582
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9b5628d9c90bcf0800000000000000
+      internalID: -238518579939132967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_3
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 660
+        width: 389
+        height: 382
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6deac38719cc33b30800000000000000
+      internalID: 4265978197209558742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_4
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 672
+        width: 75
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8588ed4c87835d810800000000000000
+      internalID: 1789398518299789400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_5
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 310
+        width: 351
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39dca977a1497f1d0800000000000000
+      internalID: -3317019759138386541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_6
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 400
+        width: 135
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda54600f3aeb4b90800000000000000
+      internalID: -7256448818267006242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_7
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 518
+        width: 246
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f1b8a085756a210800000000000000
+      internalID: 1343857574462300017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_8
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 375
+        width: 114
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b0d5b7e60aacdc0800000000000000
+      internalID: -3617902954262230177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_9
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 2
+        width: 472
+        height: 440
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaad93129be1b37e0800000000000000
+      internalID: -1784799046847046998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_10
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 372
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de17c6392dd3ecee0800000000000000
+      internalID: -1238984872854523411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_11
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 357
+        width: 114
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ec2641fffce7900800000000000000
+      internalID: 684212887872523801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_12
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 195
+        width: 114
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e79a48d69dfab4d0800000000000000
+      internalID: -3117900967684958233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_13
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 347
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb9b3e9f133f5880800000000000000
+      internalID: -8620114950872130617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_14
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 193
+        width: 114
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ece98348cbf11440800000000000000
+      internalID: 4904978306728324327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_15
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 51
+        width: 392
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a3ae663a65b13a0800000000000000
+      internalID: -6693661161349826002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_16
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 143
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f311641187136f000800000000000000
+      internalID: 69297236026462527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_17
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 0
+        width: 155
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021071ca71caa8770800000000000000
+      internalID: 8613886454970908960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_18
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 27
+        width: 114
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b4731bc7ef22b40800000000000000
+      internalID: 5414169513555348281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_19
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 23
+        width: 114
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519149b967bffe340800000000000000
+      internalID: 4895407806809905429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_20
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 0
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ca508def5b95250800000000000000
+      internalID: 5933974090187910147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_21
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e091a89422f295cb0800000000000000
+      internalID: -4874813297342670578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_22
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 518
+        width: 246
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092bbf14d76c68b4b92ed6603feb15bf
+      internalID: -820674599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latar 3_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 281
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da712e2fc006eac4dbc7fc24f5806c7b
+      internalID: -1659580973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9ee43c8c59e30ee41b53f3b31a6e05aa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Latar 3_0: -8858827145203637609
+      Latar 3_1: 8735661919871027384
+      Latar 3_10: -1238984872854523411
+      Latar 3_11: 684212887872523801
+      Latar 3_12: -3117900967684958233
+      Latar 3_13: -8620114950872130617
+      Latar 3_14: 4904978306728324327
+      Latar 3_15: -6693661161349826002
+      Latar 3_16: 69297236026462527
+      Latar 3_17: 8613886454970908960
+      Latar 3_18: 5414169513555348281
+      Latar 3_19: 4895407806809905429
+      Latar 3_2: -238518579939132967
+      Latar 3_20: 5933974090187910147
+      Latar 3_21: -4874813297342670578
+      Latar 3_22: -820674599
+      Latar 3_23: -1659580973
+      Latar 3_3: 4265978197209558742
+      Latar 3_4: 1789398518299789400
+      Latar 3_5: -3317019759138386541
+      Latar 3_6: -7256448818267006242
+      Latar 3_7: 1343857574462300017
+      Latar 3_8: -3617902954262230177
+      Latar 3_9: -1784799046847046998
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
