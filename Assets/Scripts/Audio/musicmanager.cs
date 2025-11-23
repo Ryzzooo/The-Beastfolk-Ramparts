@@ -81,6 +81,9 @@ public class MusicManager : MonoBehaviour
             case "Cutscene2":
                 PlayMusic("Cutscene");
                 break;
+            case "Cutscene3":
+                PlayMusic("Cutscene");
+                break;
             default:
                 Debug.Log("No matching music for scene: " + sceneName);
                 break;
