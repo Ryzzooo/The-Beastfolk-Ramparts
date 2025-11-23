@@ -865,29 +865,66 @@ MonoBehaviour:
   bubbleObject: {fileID: 572070684}
   characterImageDisplay: {fileID: 856089746}
   dialogueLines:
-  - sentence: "Lyre was gasping for breath, her aura panicked and her focus slipping.\nSuddenly,
-      she sensed something approaching her, and because she wasn\u2019t focused,
-      she instinctively fired her arrow."
-    characterSprite: {fileID: 0}
-  - sentence: "\u201CLy\u2026re\u2026\u201D\nSuddenly, Lyre realized something. She
-      turned around and froze in shock.\nShe had accidentally shot her own younger
-      sibling, right in the chest."
-    characterSprite: {fileID: 0}
-  - sentence: "\u2026Harp?\nHey\u2014what are you doing lying on the ground? Get
-      up. Come on.\nThis isn\u2019t the time to joke around."
+  - sentence: pulling an arrow, smug smile
     characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
-  - sentence: "(in a hoarse voice, with a weak smile)\nSorry\u2026 I must\u2019ve
-      startled you, big sister/brother\u2026"
+  - sentence: Hah? Is this all there is? An amateur monster like this caused the
+      kingdom trouble for years? Just let me handle it, one shot is all it takes!
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: You're always so rash, sis. They might be small, but their attack patterns
+      have changed over the last few weeks. Look closely, its leg movements are faster
+      than usual.
+    characterSprite: {fileID: 3912209451823220022, guid: 3e59436864b196b448ab81ba5380ba71, type: 3}
+  - sentence: Oh my god, are you seriously analyzing such a weak creature?
+    characterSprite: {fileID: -5972770435064117626, guid: 6b5f44e9c37e72f4c8915e1ad93083e4, type: 3}
+  - sentence: The monster suddenly lunges, faster than expected.
+    characterSprite: {fileID: 0}
+  - sentence: Lyre is stunned but quickly manages to dodge the monster's pounce.
+    characterSprite: {fileID: 0}
+  - sentence: (The Captain appears from the side, slashing the monster)
+    characterSprite: {fileID: 0}
+  - sentence: Hey, you two! Form up! This monster... It feels very different from
+      before...
+    characterSprite: {fileID: 3912209451823220022, guid: 08480f8438efd244584439faee3cb18d, type: 3}
+  - sentence: "Ah, Captain, relax... If this continues, I can guard the gate by mysel\u2014"
+    characterSprite: {fileID: -5972770435064117626, guid: 6b5f44e9c37e72f4c8915e1ad93083e4, type: 3}
+  - sentence: Suddenly a monster emerges from the ground and attacks. The Captain
+      blocks the attack, but the claw penetrates his armor. The Captain is pushed
+      back and falls.
+    characterSprite: {fileID: 0}
+  - sentence: Captain?!!! Are you okay?
+    characterSprite: {fileID: -5972770435064117626, guid: 6b5f44e9c37e72f4c8915e1ad93083e4, type: 3}
+  - sentence: A wide, bleeding wound is visible on the Captain's body.
+    characterSprite: {fileID: 0}
+  - sentence: I'm fine! Don't let your guard down, you two.
+    characterSprite: {fileID: 3912209451823220022, guid: 08480f8438efd244584439faee3cb18d, type: 3}
+  - sentence: Lyre! Guard the left side! I'll take care of the monster appearing
+      behind the Captain!
+    characterSprite: {fileID: 3912209451823220022, guid: 08480f8438efd244584439faee3cb18d, type: 3}
+  - sentence: Tsk
+    characterSprite: {fileID: -5972770435064117626, guid: 6b5f44e9c37e72f4c8915e1ad93083e4, type: 3}
+  - sentence: (Shoots the monster, then turns around angrily)
+    characterSprite: {fileID: -5609059352662699204, guid: 61bde3ef65a1a9f44a168d614493f14b, type: 3}
+  - sentence: "Captain! Why did you move forward with me?! I should be the one on
+      the front line! I am much more\u2014"
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: (snapping with his remaining strength)
+    characterSprite: {fileID: 3912209451823220022, guid: 08480f8438efd244584439faee3cb18d, type: 3}
+  - sentence: This isn't about who is stronger. It's about working as a team! You're
+      too careless to be left alone up front!
+    characterSprite: {fileID: 3912209451823220022, guid: 08480f8438efd244584439faee3cb18d, type: 3}
+  - sentence: "Captain! Are you seriously\u2014"
+    characterSprite: {fileID: -5972770435064117626, guid: 6b5f44e9c37e72f4c8915e1ad93083e4, type: 3}
+  - sentence: Lyre! This is no time to argue! The Captain is injured, we need to
+      create a small barricade and hold position first! The second wave of monsters
+      is coming!
     characterSprite: {fileID: 3912209451823220022, guid: d23cbecf7c67e5048917bf8e8ea5cec4, type: 3}
-  - sentence: "(in a hoarse voice, with a weak smile)\nSorry\u2026 I must\u2019ve
-      startled you, big sister/brother\u2026"
-    characterSprite: {fileID: 3912209451823220022, guid: d23cbecf7c67e5048917bf8e8ea5cec4, type: 3}
-  - sentence: "(panicked)\n\u201CDon\u2019t talk yet! Healer! Healer!!\nIs there
-      anyone who can help us?!\u201D"
-    characterSprite: {fileID: 3912209451823220022, guid: d23cbecf7c67e5048917bf8e8ea5cec4, type: 3}
-  - sentence: "(panicked)\n\u201CDon\u2019t talk yet! Healer! Healer!!\nIs there
-      anyone who can help us?!\u201D"
-    characterSprite: {fileID: 3912209451823220022, guid: d23cbecf7c67e5048917bf8e8ea5cec4, type: 3}
+  - sentence: ...Fine! But after this, Captain, you have to admit I deserve to be
+      in the very front!
+    characterSprite: {fileID: -5972770435064117626, guid: 6b5f44e9c37e72f4c8915e1ad93083e4, type: 3}
+  - sentence: (a slight smile despite the pain)
+    characterSprite: {fileID: 3912209451823220022, guid: 08480f8438efd244584439faee3cb18d, type: 3}
+  - sentence: Heh, prove you can maintain formation first, kid.
+    characterSprite: {fileID: 3912209451823220022, guid: 08480f8438efd244584439faee3cb18d, type: 3}
   typingSpeed: 0.05
   nextSceneName: Arcmage
 --- !u!4 &1730727757
