@@ -900,6 +900,72 @@ MonoBehaviour:
   - sentence: Lyra just stared at her sister's lifeless body, not even caring about
       her surroundings anymore.
     characterSprite: {fileID: -2339773933868133704, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: The captain walked over while holding his rather severe wound
+    characterSprite: {fileID: 3912209451823220022, guid: 46e6a77bdac9f6b46a15ed7cfe49a233, type: 3}
+  - sentence: '(without turning around to hold back tears)
+
+      Captain... Harp...'
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: The captain looked sadly at Harp's body.
+    characterSprite: {fileID: 3912209451823220022, guid: 46e6a77bdac9f6b46a15ed7cfe49a233, type: 3}
+  - sentence: I saw it...
+    characterSprite: {fileID: 3912209451823220022, guid: 46e6a77bdac9f6b46a15ed7cfe49a233, type: 3}
+  - sentence: 'The monsters this time were indeed much stronger.
+
+      We underestimated
+      them too much.'
+    characterSprite: {fileID: 3912209451823220022, guid: 46e6a77bdac9f6b46a15ed7cfe49a233, type: 3}
+  - sentence: Lyra began to shed tears.
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: It wasn't "us."
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: 'I was the one who always underestimated.
+
+      Harp and the captain
+      always warned... but I... I was too confident, feeling the strongest...'
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: Lyre...I can't... lead anymore.
+    characterSprite: {fileID: 3912209451823220022, guid: 46e6a77bdac9f6b46a15ed7cfe49a233, type: 3}
+  - sentence: 'My wounds are too deep.
+
+      I need a long time... to heal.'
+    characterSprite: {fileID: 3912209451823220022, guid: 46e6a77bdac9f6b46a15ed7cfe49a233, type: 3}
+  - sentence: 'Until then...
+
+      You must lead this squad.'
+    characterSprite: {fileID: 3912209451823220022, guid: 46e6a77bdac9f6b46a15ed7cfe49a233, type: 3}
+  - sentence: '(surprised)
+
+      M-me...?
+
+      Lead?'
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: You're the strongest here now.
+    characterSprite: {fileID: 3912209451823220022, guid: 46e6a77bdac9f6b46a15ed7cfe49a233, type: 3}
+  - sentence: 'And the other fighters... need someone to stand in front.
+
+      With
+      strong determination.'
+    characterSprite: {fileID: 3912209451823220022, guid: 46e6a77bdac9f6b46a15ed7cfe49a233, type: 3}
+  - sentence: '...
+
+'
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: Lyre stared at her twin's motionless body and took a deep breath.
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: Yes, Captain.
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: 'From now on...
+
+      I won''t underestimate them anymore...
+
+'
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
+  - sentence: 'Not a single one of those monsters will escape.
+
+      I will wipe
+      them out completely.'
+    characterSprite: {fileID: -5972770435064117626, guid: 61b814f231c1cb14d9742ac723d98ac7, type: 3}
   typingSpeed: 0.05
   nextSceneName: Arcmage
 --- !u!4 &1730727757
