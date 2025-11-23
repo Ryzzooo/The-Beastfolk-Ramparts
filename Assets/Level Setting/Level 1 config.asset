@@ -29,3 +29,14 @@ MonoBehaviour:
     - EnemyPrefab: {fileID: 6827977386324379469, guid: 657720bdba374714eb8b4e94727ccb9e, type: 3}
       EnemyCount: 5
       SpawnInterval: 2
+    - EnemyPrefab: {fileID: 4835925314221227539, guid: ec811e92dcdf4b9459c33e40490a684a, type: 3}
+      EnemyCount: 5
+      SpawnInterval: 2
+  - TimeBeforeWave: 2
+    EnemyGroups:
+    - EnemyPrefab: {fileID: 6827977386324379469, guid: a62f9496eb42bb24eb398dd5d172975f, type: 3}
+      EnemyCount: 3
+      SpawnInterval: 1
+    - EnemyPrefab: {fileID: 6827977386324379469, guid: 657720bdba374714eb8b4e94727ccb9e, type: 3}
+      EnemyCount: 5
+      SpawnInterval: 2
