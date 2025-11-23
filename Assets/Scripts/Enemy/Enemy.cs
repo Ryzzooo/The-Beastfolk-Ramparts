@@ -7,6 +7,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float MoveSpeed = 2f;
     [SerializeField] private float damageToSoldier = 2f; // Damage ke prajurit
     [SerializeField] private float attackSpeed = 1f;
+    private const string AttackAnimationTrigger = "Attack"; 	
+    private const string IsMovingBool = "IsMoving"; // Digunakan untuk mengontrol Walk/Idle
+    
     private float _originalSpeed;
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
@@ -20,7 +23,6 @@ public class Enemy : MonoBehaviour
         {
             if (_pathWaypoint != null && _pathWaypoint.Points.Length > 0)
             {
-                // Gunakan metode yang sudah didefinisikan di Waypoint.cs
                 return _pathWaypoint.GetWayPointPosition(_currentWaypointIndex); 
             }
             return transform.position;
@@ -38,20 +40,21 @@ public class Enemy : MonoBehaviour
         if (_enemyHealth == null)
             _enemyHealth = GetComponent<EnemyHealth>();
         
-        // Reset status posisi path
+        // Reset status
         _currentWaypointIndex = 0;
+        _isBlocked = false; 	 	
+        _blockingSoldier = null; 
+        StopAllCoroutines(); 	 
         
         // Reset kecepatan
         _originalSpeed = MoveSpeed;
         _animator.speed = 1f;
-
-        // --- BAGIAN INI YANG HILANG TADI ---
-        // Wajib reset status blokir agar musuh baru tidak diam
-        _isBlocked = false;      
-        _blockingSoldier = null; 
         
-        // Pastikan tidak ada coroutine serangan dari kehidupan sebelumnya yang nyangkut
-        StopAllCoroutines();     
+        // PERBAIKAN KRITIS 1: Paksa animasi berjalan saat Spawn
+        if (_animator != null)
+        {
+            _animator.SetBool(IsMovingBool, true); 
+        }
     }
 
     void Awake()
@@ -79,6 +82,12 @@ public class Enemy : MonoBehaviour
     {
         _isBlocked = true;
         _blockingSoldier = soldier;
+
+        // KONTROL ANIMASI: Paksa ke Idle/Attack (IsMoving = false)
+        if (_animator != null)
+        {
+            _animator.SetBool(IsMovingBool, false); // Berhenti Animasi Walk/Run
+        }
         
         // Mulai serang prajurit
         StartCoroutine(AttackSoldierRoutine());
@@ -89,12 +98,25 @@ public class Enemy : MonoBehaviour
         _isBlocked = false;
         _blockingSoldier = null;
         StopAllCoroutines(); // Berhenti menyerang
+
+        // PERBAIKAN KRITIS 2: Paksa animasi berjalan saat dilepas
+        if (_animator != null)
+        {
+            _animator.SetBool(IsMovingBool, true); // Lanjutkan Animasi Walk/Run
+        }
     }
 
     private IEnumerator AttackSoldierRoutine()
     {
         while (_isBlocked && _blockingSoldier != null)
         {
+            yield return null;
+            // Panggil Trigger Serang
+            if (_animator != null)
+            {
+                _animator.SetTrigger(AttackAnimationTrigger);
+            }
+            
             // Tunggu sesuai attack speed
             yield return new WaitForSeconds(attackSpeed);
 
@@ -102,7 +124,6 @@ public class Enemy : MonoBehaviour
             if (_blockingSoldier != null && _blockingSoldier.gameObject.activeInHierarchy)
             {
                 _blockingSoldier.TakeDamage(damageToSoldier);
-                // TODO: Mainkan animasi serang di sini
             }
         }
     }
@@ -112,8 +133,6 @@ public class Enemy : MonoBehaviour
         _pathWaypoint = path;
         _currentWaypointIndex = 0;
         
-        // Ini penting: set posisi awal untuk logika Rotate()
-        // Kita berasumsi Spawner sudah mengatur posisi transform.position
         _lastPointPosition = transform.position; 
     }
 
@@ -169,12 +188,14 @@ public class Enemy : MonoBehaviour
 
     public void FreezeMovement()
     {
-        // Simpan kecepatan saat ini (jaga-jaga kalau nanti ada efek slow)
         _originalSpeed = MoveSpeed; 
         
         // Hentikan pergerakan
         MoveSpeed = 0f;
         _animator.speed = 0f;
+        
+        // KONTROL ANIMASI: Paksa ke Idle saat dibekukan
+        if (_animator != null) _animator.SetBool(IsMovingBool, false);
 
         // (Opsional) Ubah warna jadi biru agar terlihat beku
         if (_spriteRenderer != null) _spriteRenderer.color = Color.cyan;
@@ -185,6 +206,10 @@ public class Enemy : MonoBehaviour
         // Kembalikan kecepatan
         MoveSpeed = _originalSpeed;
         _animator.speed = 1f;
+
+        // KONTROL ANIMASI: Lanjutkan berjalan jika tidak sedang diblokir oleh prajurit
+        if (_animator != null && !_isBlocked) _animator.SetBool(IsMovingBool, true);
+
 
         // Kembalikan warna
         if (_spriteRenderer != null) _spriteRenderer.color = Color.white;

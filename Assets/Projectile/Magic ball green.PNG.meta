@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Magic ball green_0: -491773166081745230
+      Magic ball green_1: -1586287296203098762
+      Magic ball green_2: 1150164736972403294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
