@@ -18,7 +18,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private Transform projectileSpawnPoint; // Titik laras tempat peluru keluar
     [SerializeField] private float attackCooldown = 1f; // Waktu jeda antar tembakan
     [Tooltip("Berapa detik jeda antara animasi mulai sampai peluru keluar? Sesuaikan dengan gerakan tangan archer.")]
-    [SerializeField] private float shootDelay = 0.5f;
+    [SerializeField] private float shootDelay = 1f;
 
     // Variabel dari kodemu
     private List<Enemy> _enemies = new List<Enemy>();
