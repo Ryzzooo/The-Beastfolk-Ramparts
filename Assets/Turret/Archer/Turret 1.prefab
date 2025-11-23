@@ -154,7 +154,6 @@ GameObject:
   - component: {fileID: 3774592977199835864}
   - component: {fileID: 3870463622615389894}
   - component: {fileID: 6533410086776954044}
-  - component: {fileID: 4813263040347988546}
   - component: {fileID: 4823621672945248260}
   - component: {fileID: 8171455909703383352}
   m_Layer: 2
@@ -195,7 +194,7 @@ MonoBehaviour:
   characterSprite: {fileID: 3758823567223407357}
   characterAnimator: {fileID: 5859885438212478917}
   attackRange: 4
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 5113451004991640090, guid: a3acbec60fc5b3d4e8ae99dad92a47ec, type: 3}
   projectileSpawnPoint: {fileID: 65441798458721968}
   attackCooldown: 1
   shootDelay: 1
@@ -262,21 +261,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4813263040347988546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4897654944466209061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e79ff6c19f07f34bb0e5f54a7cf1f06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turretProjectileSpawnPosition: {fileID: 65441798458721968}
-  delayBtwAttacks: 2
-  damage: 4
 --- !u!114 &4823621672945248260
 MonoBehaviour:
   m_ObjectHideFlags: 0

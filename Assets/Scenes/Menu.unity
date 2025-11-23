@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Beastfolk Rampage
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
-  m_sharedMaterial: {fileID: 5083024414806223017, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -973,8 +973,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CREDIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
-  m_sharedMaterial: {fileID: 5083024414806223017, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1145,8 +1145,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
-  m_sharedMaterial: {fileID: 5083024414806223017, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1410,8 +1410,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: OPTION
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
-  m_sharedMaterial: {fileID: 5083024414806223017, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1684,8 +1684,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: QUIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
-  m_sharedMaterial: {fileID: 5083024414806223017, guid: 84570c0e4e325b846a27d00473a488a8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2701,8 +2701,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSlider: {fileID: 190065955}
   sfxSlider: {fileID: 1577011293}
-  introVideo: {fileID: 32900000, guid: 3ed97cd8cd3ff8541a537949b60682bc, type: 3}
-  firstLevelSceneName: Tutorial
+  introVideo: {fileID: 32900000, guid: cc821c1a579ca3c43a8af89b7b9f4a47, type: 3}
+  firstLevelSceneName: Stage1
 --- !u!114 &1100677841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4156,7 +4156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tracks:
   - trackName: menu
-    clip: {fileID: 8300000, guid: 54b14ce244660874f944bcf67aa0becf, type: 3}
+    clip: {fileID: 8300000, guid: c2a389dd90322314bba792cfce1d096b, type: 3}
   - trackName: Cutscene1
     clip: {fileID: 8300000, guid: 54b14ce244660874f944bcf67aa0becf, type: 3}
   - trackName: Tutorial

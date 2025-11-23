@@ -7,6 +7,9 @@ public class Projectile : MonoBehaviour
     [SerializeField] protected float moveSpeed = 10f;
     [Tooltip("Jumlah kerusakan yang diberikan")]
     [SerializeField] protected float damage = 2f;
+
+    [Tooltip("Putar ini jika panah menghadap arah yang salah. Coba -90, 90, atau 180.")]
+    [SerializeField] private float rotationOffset = 0f;
     
     [Header("Precision")]
     [Tooltip("Jarak minimum ke target sebelum proyektil dianggap 'kena'")]
@@ -23,75 +26,66 @@ public class Projectile : MonoBehaviour
     // Update dipanggil setiap frame
     protected virtual void Update()
     {
-        if (transform.parent != null)
+        // 1. Cek awal
+        if (_target == null)
         {
-            transform.rotation = initialSpawnPoint.rotation;
-            _target = null;
+            gameObject.SetActive(false);
             return;
         }
 
-        if (_target == null || !_target.gameObject.activeInHierarchy)
-        {
-            ObjectPooler.ReturnToPool(gameObject);
-            return;
-        }
-
-        // Jika kita punya target, bergerak dan berputar
+        // 2. Gerakkan Peluru
         MoveProjectile();
+        
+        // --- TAMBAHAN PENGAMAN ---
+        // Jika setelah bergerak peluru jadi non-aktif (karena kena target),
+        // atau target tiba-tiba hilang (null), BERHENTI DI SINI.
+        // Jangan lanjut ke RotateProjectile.
+        if (!gameObject.activeSelf || _target == null) return;
+        // -------------------------
+
+        // 3. Rotasi Peluru
         RotateProjectile();
     }
 
     // Metode untuk menggerakkan proyektil
     protected virtual void MoveProjectile()
     {
-        // Bergerak lurus ke arah posisi target
-        transform.position = Vector2.MoveTowards(
-            transform.position, 
-            _target.transform.position, 
-            moveSpeed * Time.deltaTime
-        );
+        transform.position = Vector2.MoveTowards(transform.position, _target.transform.position, moveSpeed * Time.deltaTime);
 
-        // Hitung sisa jarak ke target
-        float distanceToTarget = (transform.position - _target.transform.position).magnitude;
-
-        // Jika sudah sangat dekat, anggap sudah 'kena'
-        if (distanceToTarget < minDistanceToDealDamage)
+        // Cek jika sudah kena
+        if (Vector2.Distance(transform.position, _target.transform.position) < 0.1f)
         {
             HitTarget();
         }
     }
 
     // Metode saat proyektil mengenai target
-    protected virtual void HitTarget()
+    private void RotateProjectile()
     {
-        if (_target == null) return; // Pengaman ganda
+        Vector2 direction = _target.transform.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        // Ambil komponen EnemyHealth dari target
-        EnemyHealth targetHealth = _target.GetComponent<EnemyHealth>();
+        // --- SESUAIKAN OFFSET INI ---
+        // Jika gambar Panah menghadap KANAN (-->), pakai: angle
+        // Jika gambar Panah menghadap ATAS (^), pakai: angle - 90f
         
-        // Berikan damage ke target
-        if (targetHealth != null)
-        {
-            // INI PENTING: Memanggil metode dari EnemyHealth.cs
-            targetHealth.DealDamage(damage);
-        }
-
-        // INI PENTING: Kembalikan proyektil ini ke pool
-        ObjectPooler.ReturnToPool(gameObject);
+        transform.rotation = Quaternion.Euler(0, 0, angle + rotationOffset);
+        // Ganti jadi (0, 0, angle - 90f) kalau panahmu tegak lurus di gambar aslinya
     }
 
     // Metode untuk memutar proyektil agar menghadap target
-    protected virtual void RotateProjectile()
-{
-    if (_target == null) return; 
+    protected virtual void HitTarget()
+    {
+        // Berikan damage
+        EnemyHealth enemyHealth = _target.GetComponent<EnemyHealth>();
+        if (enemyHealth != null)
+        {
+            enemyHealth.DealDamage(damage);
+        }
 
-    Vector2 direction = _target.transform.position - transform.position;
-    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-    // --- UBAH BARIS INI ---
-    // transform.rotation = Quaternion.Euler(0, 0, angle); // <--- INI VERSI LAMA
-    transform.rotation = Quaternion.Euler(0, 0, angle - 90f); // <--- INI VERSI BARU
-}
+        // Kembalikan ke pool
+        gameObject.SetActive(false);
+    }
 
     // Ini adalah metode KUNCI yang dipanggil oleh Turret.cs
     // untuk memberi tahu proyektil siapa yang harus dikejar.

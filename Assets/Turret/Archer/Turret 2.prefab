@@ -53,7 +53,7 @@ MonoBehaviour:
   characterSprite: {fileID: 1807329872039587035}
   characterAnimator: {fileID: 5806045979365964193}
   attackRange: 4
-  projectilePrefab: {fileID: 5113451004991640090, guid: a3acbec60fc5b3d4e8ae99dad92a47ec, type: 3}
+  projectilePrefab: {fileID: 5113451004991640090, guid: a18cae10d0f8a7f4699c0bedbc434ba5, type: 3}
   projectileSpawnPoint: {fileID: 2107725375785282423}
   attackCooldown: 1
   shootDelay: 0.5
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e79ff6c19f07f34bb0e5f54a7cf1f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretProjectileSpawnPosition: {fileID: 0}
+  turretProjectileSpawnPosition: {fileID: 2107725375785282423}
   delayBtwAttacks: 1
   damage: 4
 --- !u!114 &4823621672945248260
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445c709da277ffe458a0166f6d84d1da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5113451004991640090, guid: a3acbec60fc5b3d4e8ae99dad92a47ec, type: 3}
+  prefab: {fileID: 5113451004991640090, guid: a18cae10d0f8a7f4699c0bedbc434ba5, type: 3}
   poolSize: 10
 --- !u!114 &8171455909703383352
 MonoBehaviour:

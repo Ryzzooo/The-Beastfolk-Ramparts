@@ -66,7 +66,7 @@ public class MusicManager : MonoBehaviour
             case "Menu":
                 PlayMusic("menu");
                 break;
-            case "Tutorial":
+            case "Stage1":
                 PlayMusic("Stage1");
                 break;
             case "Tutorial 1":
