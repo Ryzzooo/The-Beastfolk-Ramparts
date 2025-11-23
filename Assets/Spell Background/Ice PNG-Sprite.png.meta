@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: 77be836e00c85b544a4aaf92019467de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4182844081740941645
+    second: Ice PNG-Sprite_0
+  - first:
+      213: -1822873778237121532
+    second: Ice PNG-Sprite_1
+  - first:
+      213: 5522826624982919898
+    second: Ice PNG-Sprite_2
+  - first:
+      213: -6181473047044869626
+    second: Ice PNG-Sprite_3
+  - first:
+      213: -2182285874111944671
+    second: Ice PNG-Sprite_4
+  - first:
+      213: -3707142714523844788
+    second: Ice PNG-Sprite_5
+  - first:
+      213: -9057814874462692879
+    second: Ice PNG-Sprite_6
+  - first:
+      213: -6522266273220327580
+    second: Ice PNG-Sprite_7
+  - first:
+      213: 8689286267397854261
+    second: Ice PNG-Sprite_8
+  - first:
+      213: -1493576980930518176
+    second: Ice PNG-Sprite_9
+  - first:
+      213: 6517850147250547486
+    second: Ice PNG-Sprite_10
+  - first:
+      213: 1293322203454159757
+    second: Ice PNG-Sprite_11
+  - first:
+      213: 7710648463127417268
+    second: Ice PNG-Sprite_12
+  - first:
+      213: -3983348597446386940
+    second: Ice PNG-Sprite_13
+  - first:
+      213: -9047404970392643521
+    second: Ice PNG-Sprite_14
+  - first:
+      213: 4460248715573552388
+    second: Ice PNG-Sprite_15
+  - first:
+      213: -8870556464642533813
+    second: Ice PNG-Sprite_16
+  - first:
+      213: 542494890880628446
+    second: Ice PNG-Sprite_17
+  - first:
+      213: -532273214031571419
+    second: Ice PNG-Sprite_18
+  - first:
+      213: -207887158926096341
+    second: Ice PNG-Sprite_19
+  - first:
+      213: -127876086878222791
+    second: Ice PNG-Sprite_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 0
+        width: 1282
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49830bd7827c0a30800000000000000
+      internalID: 4182844081740941645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 2418
+        y: 604
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c5dc9e4f9d3b6e0800000000000000
+      internalID: -1822873778237121532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 3174
+        y: 442
+        width: 239
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada2d22ed8505ac40800000000000000
+      internalID: 5522826624982919898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3980
+        y: 367
+        width: 255
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6023d3ab30ff63aa0800000000000000
+      internalID: -6181473047044869626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 4770
+        y: 444
+        width: 272
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128643b4f86f6b1e0800000000000000
+      internalID: -2182285874111944671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 5572
+        y: 449
+        width: 313
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ff029a7559d8cc0800000000000000
+      internalID: -3707142714523844788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 6465
+        y: 442
+        width: 332
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9d66eac5d2c4280800000000000000
+      internalID: -9057814874462692879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 7259
+        y: 449
+        width: 313
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467013681614c75a0800000000000000
+      internalID: -6522266273220327580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 8138
+        y: 444
+        width: 272
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534dde782db869870800000000000000
+      internalID: 8689286267397854261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 8879
+        y: 367
+        width: 255
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063afee26afb54be0800000000000000
+      internalID: -1493576980930518176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 9599
+        y: 442
+        width: 239
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ba8160d2e047a50800000000000000
+      internalID: 6517850147250547486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 442
+        width: 288
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bb20511bdc2f110800000000000000
+      internalID: 1293322203454159757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 439
+        width: 318
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b11f98ace9b10b60800000000000000
+      internalID: 7710648463127417268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 582
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b58a82e8d48b8c0800000000000000
+      internalID: -3983348597446386940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 2639
+        y: 554
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3894a85d19217280800000000000000
+      internalID: -9047404970392643521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 479
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40567ad439cf5ed30800000000000000
+      internalID: 4460248715573552388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 2353
+        y: 463
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46dfe4c4e375e480800000000000000
+      internalID: -8870556464642533813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 3266
+        y: 396
+        width: 95
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6776f9a34578700800000000000000
+      internalID: 542494890880628446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 9691
+        y: 396
+        width: 95
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 526513af45cfc98f0800000000000000
+      internalID: -532273214031571419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 3311
+        y: 352
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2848dafabf6d1df0800000000000000
+      internalID: -207887158926096341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ice PNG-Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 9736
+        y: 352
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9364b526061b93ef0800000000000000
+      internalID: -127876086878222791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
